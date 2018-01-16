@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Маков](https://up.htmlacademy.ru/adaptive/13/user/463727).
-* Наставник: `Неизвестно`.
+* Наставник: `Макс Масленко`.
 
 ---
 
