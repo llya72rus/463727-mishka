@@ -1,0 +1,19 @@
+.main-nav__list {
+	@include list;
+	flex-direction: column;
+}
+
+.main-nav__link,
+.main-nav__input,
+.main-nav__input::placeholder {
+	color: #000000;
+	font-size: 17px;
+	line-height: 24px;
+	font-family: $ff-bold;
+}
+
+.main-nav__input {
+	border: none;
+}
+
+

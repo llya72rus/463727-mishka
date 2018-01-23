@@ -10,7 +10,7 @@ var server = require("browser-sync").create();
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
