@@ -1,0 +1,28 @@
+.products {
+	margin-bottom: 30px;
+}
+
+.products__list {
+	@include list;
+	flex-direction: column;
+}
+
+.products__item {
+
+	&--interior-items {
+		background-color: #63d1bb;
+	}
+
+	&--toys {
+		background-color: #56c3b2;
+	}
+}
+
+.products__title {
+	padding: 30px;
+	margin: 0;
+	color: #ffffff;
+	font-family: $open-sans-bold;
+	font-size: 19px;
+	line-height: 24px;
+}

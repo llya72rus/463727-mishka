@@ -1,0 +1,27 @@
+.features {
+	padding: 0 30px;
+}
+
+.features__title {
+	margin: 0;
+	margin-bottom: 28px;
+}
+
+.features__list {
+	@include list;
+	flex-direction: column; 
+}
+
+.features__subtitle {
+	margin: 0;
+	font-family: $open-sans-bold;
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.features__img {
+	display: block;
+	margin-bottom: 20px;
+	padding-left: 8px;
+	fill: #63d1bb;
+}
