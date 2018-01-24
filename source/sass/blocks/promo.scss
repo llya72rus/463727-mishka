@@ -1,7 +1,13 @@
 .promo {
-    padding: 0 30px;
+    margin-bottom: 58px;
+    padding: 0 30px 32px;
+    border-bottom: 1px solid #ededed;
 }
 
+.promo__video {
+    position: relative;
+    margin-bottom: 33px;
+}
 .promo__title {
     display: flex;
     align-items: center;
@@ -20,4 +26,26 @@
         height: 32px;
         background: url(../../img/icon-video.svg);
     }
+}
+
+.promo__play-btn {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.promo__text {
+    margin: 0;
+    margin-bottom: 53px;
+    padding-left: 30px;
+    color: #444444;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.promo__order {
+    width: 74%;
+    margin: 0 auto;
 }
