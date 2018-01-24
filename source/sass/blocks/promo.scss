@@ -1,0 +1,23 @@
+.promo {
+    padding: 0 30px;
+}
+
+.promo__title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 25px;
+    padding-left: 34px;
+    font-family: $open-sans-bold;
+    font-size: 17px;
+    line-height: 24px;
+
+    &::before {
+        content: "";
+        display: inline-flex;
+        margin-right: 30px;
+        width: 32px;
+        height: 32px;
+        background: url(../../img/icon-video.svg);
+    }
+}
