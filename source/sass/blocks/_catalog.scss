@@ -5,3 +5,7 @@
 .catalog__list {
   @include list();
 }
+
+.catalog__product {
+  margin-bottom: 30px;
+}

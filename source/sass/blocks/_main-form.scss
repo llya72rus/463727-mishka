@@ -1,14 +1,5 @@
-.page-form {
-  margin-bottom: 55px;
-  padding: 0 30px;
-}
-
-.page-form__text {
-  margin: 0;
-  margin-bottom: 52px;
-  color: $primary-color;
-  font-size: 13px;
-  line-height: 1.85;
+.main-form {
+  padding-bottom: 55px;
 }
 
 .main-form__fieldset {
@@ -107,9 +98,8 @@
   width: 100%;
   padding: 0 14px 14px 0;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid $black;
   font-family: inherit;
-  font-weight: 700;
 }
 
 .main-form__textarea {
@@ -137,4 +127,10 @@
   color: $primary-color;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.main-form__send-order {
+  padding-left: 45px;
+  padding-right: 45px;
+  margin: 0 auto;
 }
