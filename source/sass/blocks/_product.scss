@@ -1,0 +1,39 @@
+.product__text-wrapper {
+  padding: 30px 28px;
+  border: 1px solid $grey-light;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: $black;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.product__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 2.3;
+}
+
+.product__price-and-cart-wrapper {
+  @include flex();
+  align-items: center;
+  padding-top: 25px;
+  border-top: 2px solid $grey-lighten;
+}
+
+.product__price {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.product__cart {
+  font-size: 0;
+}
+
+.product__cart-img {
+  opacity: 0.2;
+}

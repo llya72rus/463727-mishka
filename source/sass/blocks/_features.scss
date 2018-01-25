@@ -1,0 +1,33 @@
+.features {
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+
+.features__title {
+  margin-bottom: 28px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__item {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 17px;
+  line-height: 1.12;
+  font-weight: 700;
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
+
+.features__img {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 8px;
+  fill: $secondary-color;
+}

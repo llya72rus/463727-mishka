@@ -1,0 +1,7 @@
+.social {
+  @include flex();
+  @include list();
+  width: 145px;
+  margin: 0 auto 27px;
+  font-size: 0;
+}

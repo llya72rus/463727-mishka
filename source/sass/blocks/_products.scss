@@ -1,0 +1,21 @@
+.products__list {
+  @include list();
+}
+
+.products__item {
+  &--interior-items {
+    background-color: $secondary-color;
+  }
+
+  &--toys {
+    background-color: $secondary-color-dark;
+  }
+}
+
+.products__title {
+  padding: 30px;
+  margin: 0;
+  color: $black;
+  font-size: 19px;
+  line-height: 1.26;
+}

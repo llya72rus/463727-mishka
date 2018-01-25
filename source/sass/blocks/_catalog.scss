@@ -1,0 +1,11 @@
+.catalog {
+  padding: 0 30px;
+}
+
+.catalog__list {
+  @include list();
+}
+
+.catalog__product {
+  margin-bottom: 30px;
+}
