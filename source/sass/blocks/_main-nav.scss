@@ -16,14 +16,14 @@
 
 .main-nav__link,
 .main-nav__input, {
-  color: #000000;
+  color: $black;
   font-size: 17px;
   line-height: 1.4;
   font-weight: 700;
 }
 
 .main-nav__input::placeholder {
-  color: #000000;
+  color: $black;
 }
 
 .main-nav__input {
@@ -43,9 +43,8 @@
   vertical-align: baseline;
   width: 21px;
   height: 20px;
-  font-size: 0;
   padding: 0;
-  background: url("../../img/icon-menu-open.svg") no-repeat center;
+  background: url("#{$imgDir}/icon-menu-open.svg") no-repeat center;
   border: none;
   cursor: pointer;
 }

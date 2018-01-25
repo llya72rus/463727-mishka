@@ -12,7 +12,7 @@
     display: block;
     width: 100%;
     height: 6px;
-    background: url("../../img/zigzag-line-desktop-svg.svg") no-repeat center;
+    background: url("#{$imgDir}/zigzag-line-desktop-svg.svg") no-repeat center;
   }
 }
 
@@ -58,5 +58,4 @@
   padding: 0;
   background-color: $white;
   border: 1px solid $grey-lighten;
-  font-size: 0;
 }

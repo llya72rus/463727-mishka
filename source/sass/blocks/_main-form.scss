@@ -1,5 +1,5 @@
 .main-form {
-  padding-bottom: 55px;
+  margin-bottom: 55px;
 }
 
 .main-form__fieldset {
@@ -65,7 +65,7 @@
   left: 4px;
   width: 33px;
   height: 23px;
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("#{$imgDir}/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
