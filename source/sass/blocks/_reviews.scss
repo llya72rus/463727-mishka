@@ -47,7 +47,7 @@
 }
 
 .reviews__toggles {
-  @include flex;
+  @include flex();
   margin-bottom: 38px;
 }
 
@@ -57,6 +57,6 @@
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  border: 1px solid #ececec;
+  border: 1px solid $grey-lighten;
   font-size: 0;
 }

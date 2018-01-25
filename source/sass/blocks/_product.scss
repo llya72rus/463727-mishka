@@ -4,7 +4,7 @@
 
 .product__text-wrapper {
   padding: 30px 28px;
-  border: 1px solid #ededed;
+  border: 1px solid $grey-light;
 }
 
 .product__title {
@@ -23,7 +23,7 @@
 }
 
 .product__price-and-cart-wrapper {
-  @include flex;
+  @include flex();
   align-items: center;
   padding-top: 25px;
   border-top: 2px solid #ececec;

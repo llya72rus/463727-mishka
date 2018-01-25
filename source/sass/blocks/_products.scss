@@ -3,17 +3,16 @@
 }
 
 .products__list {
-  @include list;
-  flex-direction: column;
+  @include list();
 }
 
 .products__item {
   &--interior-items {
-    background-color: #63d1bb;
+    background-color: $secondary-color;
   }
 
   &--toys {
-    background-color: #56c3b2;
+    background-color: $secondary-color-dark;
   }
 }
 

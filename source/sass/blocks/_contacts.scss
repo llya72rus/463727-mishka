@@ -20,7 +20,7 @@
 }
 
 .contacts__string-wrapper {
-  @include flex;
+  @include flex();
 
   &--email {
     padding-right: 10px;
