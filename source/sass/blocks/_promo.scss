@@ -1,0 +1,51 @@
+.promo {
+  margin-bottom: 58px;
+  padding: 0 30px 32px;
+  border-bottom: 1px solid #ededed;
+}
+
+.promo__video {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.promo__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-left: 34px;
+  font-size: 17px;
+  line-height: 1.4;
+
+  &::before {
+    content: "";
+    display: inline-flex;
+    margin-right: 30px;
+    width: 32px;
+    height: 32px;
+    background: url("../../img/icon-video.svg");
+  }
+}
+
+.promo__play-btn {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 53px;
+  padding-left: 30px;
+  color: $primary-color;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.promo__order {
+  width: 74%;
+  margin: 0 auto;
+}

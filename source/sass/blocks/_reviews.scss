@@ -1,0 +1,62 @@
+
+.reviews {
+  position: relative;
+  margin-bottom: 90px;
+  padding: 0 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -55px;
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: url("../../img/zigzag-line-desktop-svg.svg") no-repeat center;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 30px;
+}
+
+.reviews__list {
+  margin-bottom: 36px;
+}
+
+.reviews__blockquote {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 15px;
+  line-height: 2;
+  color: $primary-color;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.reviews__author-nickname {
+  color: $primary-color;
+  line-height: 1.76;
+}
+
+.reviews__toggles {
+  @include flex;
+  margin-bottom: 38px;
+}
+
+.reviews__toggle {
+  width: 50%;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  font-size: 0;
+}

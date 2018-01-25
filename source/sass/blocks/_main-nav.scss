@@ -1,0 +1,48 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 30px 0;
+  border-top: 2px solid #ececec;
+}
+
+.main-nav__link,
+.main-nav__input,
+.main-nav__input::placeholder {
+  color: #000000;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.main-nav__input {
+  display: block;
+  width: 100%;
+  padding: 30px 0;
+  border: none;
+  border-top: 2px solid #ececec;
+  font-family: inherit;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 21px;
+  height: 20px;
+  font-size: 0;
+  padding: 0;
+  background: url("../../img/icon-menu-open.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+}
