@@ -1,6 +1,7 @@
 .popular-product {
+  @include mobile-centerer();
   position: relative;
-  padding: 33px 30px 0;
+  padding: 30px 0;
 
   &--mb {
     margin-bottom: 77px;
@@ -14,11 +15,12 @@
     display: block;
     width: 100%;
     height: 6px;
-    background: url("#{$imgDir}/zigzag-line-desktop-svg.svg") no-repeat center;
+    background: url("#{$imgDir}/zigzag-line-desktop-svg.svg") repeat center;
   }
 }
 
 .popular-product__title {
+  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -41,7 +43,7 @@
 
 .popular-product__characreristics {
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 435px;
   color: $primary-color;
   border-collapse: collapse;
 }
@@ -52,7 +54,8 @@
 }
 
 .popular-product__img {
-  margin-bottom: 28px;
+  position: absolute;
+  bottom: 150px;
 }
 
 .popular-product__price {
@@ -62,4 +65,76 @@
   font-size: 17px;
   line-height: 1.7;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .popular-product {
+    width: 668px;
+  }
+
+  .popular-product__bottom-wrapper {
+    @include flex();
+  }
+
+  .popular-product__text {
+    width: 44%;
+  }
+
+  .popular-product__top-wrapper {
+    @include flex();
+    align-items: center;
+    margin-bottom: 60px;
+    padding-right: 25px;
+  }
+
+  .popular-product__characreristics {
+    margin-bottom: 68px;
+  }
+
+  .popular-product__img {
+    position: static;
+    width: 50%;
+  }
+
+  .popular-product__label {
+    width: 75px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .popular-product {
+    width: 1050px;
+    margin-top: 150px;
+    padding-top: 0;
+  }
+
+  .popular-product__title {
+    z-index: 10;
+  }
+
+  .popular-product__top-wrapper {
+    width: 700px;
+    flex-direction: row-reverse;
+    margin-bottom: -140px;
+  }
+
+  .popular-product__bottom-wrapper {
+    justify-content: flex-start;
+  }
+
+  .popular-product__text {
+    width: 28%;
+    margin-left: auto;
+    padding-top: 214px;
+  }
+
+  .popular-product__characreristics {
+    margin-bottom: 85px;
+  }
+
+  .popular-product__img {
+    margin-left: 58px;
+  }
 }

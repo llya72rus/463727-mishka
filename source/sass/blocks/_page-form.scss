@@ -1,6 +1,6 @@
 .page-form {
-  margin-bottom: 55px;
   padding: 0 30px;
+  margin-bottom: 55px;
 }
 
 .page-form__text {
@@ -9,4 +9,24 @@
   color: $primary-color;
   font-size: 13px;
   line-height: 1.85;
+}
+
+@media (min-width: 768px) {
+  .page-form {
+    padding: 0;
+  }
+
+  .page-form__text {
+    padding: 0 50px;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-form__text {
+    width: 700px;
+    margin: 0 auto 52px;
+    padding: 0;
+  }
 }

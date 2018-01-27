@@ -1,25 +1,39 @@
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
   position: relative;
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.main-nav__menu-list,
+.main-nav__user-panel-list {
+  @include reset-list();
 }
 
-.main-nav__link {
-  display: block;
-  padding: 30px 0;
+.main-nav__item {
   border-top: 2px solid $grey-lighten;
-}
-
-.main-nav__link,
-.main-nav__input, {
   color: $black;
   font-size: 17px;
   line-height: 1.4;
   font-weight: 700;
+
+  &--desktop-show,
+  &--delivery {
+    display: none;
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  display: block;
+  padding: 30px 0;
+  padding-left: 76px;
+}
+
+.main-nav__img {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+  fill: #d3d2d2;
 }
 
 .main-nav__input::placeholder {
@@ -33,6 +47,10 @@
   border: none;
   border-top: 2px solid $grey-lighten;
   font-family: inherit;
+  color: $black;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 .main-nav__toggle {
@@ -47,4 +65,106 @@
   background: url("#{$imgDir}/icon-menu-open.svg") no-repeat center;
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    @include flex();
+    flex-direction: column;
+    width: 668px;
+  }
+
+  .main-nav__menu-list,
+  .main-nav__user-panel-list {
+    @include flex();
+  }
+
+  .main-nav__menu-list {
+    order: 1;
+    width: 305px;
+    margin-bottom: -20px;
+    z-index: 10;
+  }
+
+  .main-nav__item {
+    border-top: none;
+
+    &--delivery {
+      display: block;
+      z-index: 10;
+      margin-left: auto;
+      margin-bottom: -20px;
+      font-size: 15px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+  }
+
+  .main-nav__user-panel-list {
+    width: 350px;
+    margin-left: auto;
+  }
+
+  .main-nav__img {
+    position: static;
+  }
+
+  .main-nav__link {
+    padding: 35px 0;
+    border-top: none;
+
+    &--catalog,
+    &--knitting {
+      padding: 10px 0;
+      font-size: 15px;
+    }
+
+    &--search {
+      width: 84px;
+      font-size: 0;
+      text-align: center;
+      border-left: 1px solid $grey-lighten;
+      border-right: 1px solid $grey-lighten;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__input {
+    border-top: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    flex-direction: row;
+    width: 1050px;
+    padding: 0 50px;
+  }
+
+  .main-nav__item {
+    &--desktop-show {
+      display: block;
+      font-size: 15px;
+    }
+
+    &--sale {
+      padding-right: 60px;
+    }
+  }
+
+  .main-nav__menu-list {
+    order: 0;
+    width: 377px;
+  }
+
+  .main-nav__link {
+    &--catalog,
+    &--knitting {
+      padding: 35px 0;
+      font-size: 17px;
+    }
+  }
 }
