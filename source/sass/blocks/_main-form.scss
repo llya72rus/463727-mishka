@@ -146,16 +146,12 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-form__label {
     display: inline-block;
+    vertical-align: baseline;
     padding-left: 63px;
     font-size: 19px;
-
-    &-name {
-      margin-right: 30px;
-      font-size: 19px;
-    }
 
     &::before {
       top: -11px;
@@ -198,17 +194,11 @@
   }
 
   .main-form__wrapper {
-    position: relative;
     width: 668px;
     margin: 0 auto;
-    padding-left: 167px;
 
     &--color {
       padding-right: 38px;
-    }
-
-    &--type {
-      padding-left: 0;
     }
 
     &--tel {
@@ -220,6 +210,16 @@
     }
   }
 
+  .main-form__fieldset-wrapper {
+    width: 501px;
+    margin-left: auto;
+
+    &--color {
+      @include flex(flex-start);
+      align-items: stretch;
+    }
+  }
+
   .main-form__grey-wrapper {
     margin-bottom: 50px;
     padding: 50px 0;
@@ -227,20 +227,12 @@
   }
 
   .main-form__fieldset {
+    @include flex(flex-start);
+    align-items: stretch;
     margin-bottom: 0;
-    &--type {
-      width: 334px;
-      margin: 0 auto;
-    }
   }
 
-  .main-form__inner-wrapper {
-    @include flex();
-    justify-content: flex-start;
-    width: 464px;
-  }
-
-  .main-form__fieldset--color p {
+  .main-form__item--color {
     width: 50%;
   }
 
@@ -249,13 +241,23 @@
 
     &--name {
       @include flex();
-      align-items: center;
+      align-items: flex-start;
     }
 
     &--orange,
     &--pink {
       margin-bottom: 0;
     }
+  }
+
+  .main-form__item-name {
+    margin-right: 30px;
+    font-size: 19px;
+  }
+
+  .main-form__label-name {
+    margin-right: 25px;
+    margin-bottom: 0;
   }
 
   .main-form__fieldset--color label {
@@ -273,9 +275,7 @@
   }
 
   .main-form__title {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-bottom: 0;
   }
 
   .main-form__textarea {
@@ -293,7 +293,6 @@
 
   .main-form__bottom-info {
     @include flex();
-    align-items: center;
     width: 668px;
     margin: 0 auto;
     text-align: left;
@@ -311,30 +310,32 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .main-form__wrapper {
     width: 1050px;
-    padding-left: 175px;
+  }
+
+  .main-form__fieldset-wrapper {
+    width: 700px;
+
+    &--color {
+      width: 728px;
+      justify-content: space-between;
+    }
   }
 
   .main-form__fieldset {
-    width: 700px;
-    &--type {
-      width: auto;
+    width: 875px;
+    padding-left: 64px;
+
+    &--color {
+      width: 902px;
       margin: 0;
     }
   }
 
-  .main-form__title {
-    left: 64px;
-  }
-
-  .main-form__inner-wrapper {
-    width: 788px;
-  }
-
-  .main-form__fieldset--color p {
-    width: 33.33%;
+  .main-form__item--color {
+    width: 205px;
   }
 
   .main-form__item--black {

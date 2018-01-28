@@ -1,4 +1,4 @@
-.products__list {
+.products {
   @include reset-list();
 }
 
@@ -21,9 +21,10 @@
   line-height: 1.26;
 }
 
-@media (min-width: 768px) {
-  .products__list {
+@media (min-width: $tablet-width) {
+  .products {
     @include flex;
+    width: 100%;
   }
 
   .products__item {
@@ -33,5 +34,11 @@
   .products__title {
     padding-top: 35px;
     padding-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__title {
+    padding-right: 345px;
   }
 }

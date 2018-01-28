@@ -21,7 +21,7 @@
 
 .product__price-and-cart-wrapper {
   @include flex();
-  align-items: center;
+  align-items: stretch;
   padding-top: 25px;
   border-top: 2px solid $grey-lighten;
 }
@@ -43,14 +43,16 @@
   opacity: 0.2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .product {
     @include flex();
+    align-items: stretch;
     min-height: 334px;
   }
 
   .product__text-wrapper {
     @include flex();
+    align-items: stretch;
     flex-direction: column;
     width: 50%;
   }
@@ -83,7 +85,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .product {
     flex-direction: column;
   }

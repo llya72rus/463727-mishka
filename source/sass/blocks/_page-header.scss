@@ -1,23 +1,15 @@
-
-@media (min-width: 768px) {
-  .page-header {
-    height: 89px;
-    border-bottom: 1px solid #e7e7e7;
-  }
-
+@media (min-width: $tablet-width) {
   .page-header__logo {
     position: absolute;
-    z-index: 10;
     padding-top: 27px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .page-header__logo {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     margin: auto;
   }
 }

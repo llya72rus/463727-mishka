@@ -20,7 +20,8 @@
 }
 
 .contacts__string-wrapper {
-  @include flex();
+  @include flex(flex-start);
+  align-items: stretch;
 
   &--email {
     padding-right: 10px;
@@ -31,7 +32,7 @@
   }
 }
 
-.contacts__desc-text {
+.contacts__desc {
   margin: 0;
 
   &--address {
@@ -48,13 +49,14 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .contacts__text-wrapper {
     width: 668px;
   }
 
   .contacts__desc-list {
     @include flex();
+    align-items: stretch;
   }
 
   .contacts__string-wrapper {
@@ -70,11 +72,11 @@
     }
   }
 
-  .contacts__termin-text {
+  .contacts__termin {
     margin-right: 27px;
   }
 
-  .contacts__desc-text--address {
+  .contacts__desc--address {
     width: 220px;
     padding-left: 0;
   }
@@ -88,11 +90,9 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .contacts {
-    @include flex();
-    justify-content: flex-start;
-    align-items: center;
+    @include flex(flex-start);
     position: relative;
     width: 1050px;
     margin: 0 auto 70px;

@@ -1,6 +1,7 @@
-@mixin flex ($just-cont: space-between) {
+@mixin flex ($just-cont: space-between, $align-items: center) {
   display: flex;
   justify-content: $just-cont;
+  align-items: $align-items;
   flex-wrap: wrap;
 }
 

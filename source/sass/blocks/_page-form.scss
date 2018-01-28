@@ -11,7 +11,7 @@
   line-height: 1.85;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-form {
     padding: 0;
   }
@@ -23,7 +23,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .page-form__text {
     width: 700px;
     margin: 0 auto 52px;

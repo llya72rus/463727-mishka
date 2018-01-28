@@ -4,8 +4,7 @@
   position: relative;
 }
 
-.main-nav__menu-list,
-.main-nav__user-panel-list {
+.main-nav__list {
   @include reset-list();
 }
 
@@ -67,46 +66,51 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .main-nav {
-    @include flex();
-    flex-direction: column;
     width: 668px;
   }
 
-  .main-nav__menu-list,
-  .main-nav__user-panel-list {
-    @include flex();
-  }
-
-  .main-nav__menu-list {
-    order: 1;
-    width: 305px;
-    margin-bottom: -20px;
-    z-index: 10;
+  .main-nav__list {
+    @include flex(flex-start);
   }
 
   .main-nav__item {
     border-top: none;
 
+    &--search {
+      margin-left: 320px;
+      margin-right: 30px;
+    }
+
+    &--catalog {
+      order: 1;
+      margin-right: 37px;
+    }
+
+    &--knitting {
+      order: 2;
+    }
+
     &--delivery {
+      order: 6;
       display: block;
-      z-index: 10;
       margin-left: auto;
-      margin-bottom: -20px;
+      padding: 5px 0;
       font-size: 15px;
       line-height: 1.6;
       font-weight: 400;
     }
   }
 
-  .main-nav__user-panel-list {
-    width: 350px;
-    margin-left: auto;
-  }
-
   .main-nav__img {
     position: static;
+    display: inline-block;
+    vertical-align: middle;
+
+    &--cart {
+      margin-right: 28px;
+    }
   }
 
   .main-nav__link {
@@ -137,22 +141,55 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .main-nav {
-    flex-direction: row;
     width: 1050px;
-    padding: 0 50px;
   }
 
   .main-nav__item {
+    &--search {
+      order: 2;
+      margin-left: 325px;
+      margin-right: 30px;
+    }
+
+    &--cart {
+      order: 3;
+    }
+
+    &--catalog {
+      position: relative;
+      order: 0;
+      margin-right: 72px;
+    }
+
+    &--knitting {
+      order: 1;
+    }
+
     &--desktop-show {
       display: block;
       font-size: 15px;
     }
 
-    &--sale {
-      padding-right: 60px;
+    &--new {
+      order: 4;
+      margin-right: 60px;
     }
+
+    &--sale {
+      order: 5;
+    }
+  }
+
+  .main-nav__item--catalog::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -35px;
+    width: 1px;
+    height: 100%;
+    background-color: $grey-lighten;
   }
 
   .main-nav__menu-list {
@@ -163,8 +200,13 @@
   .main-nav__link {
     &--catalog,
     &--knitting {
+      margin-top: 0;
       padding: 35px 0;
       font-size: 17px;
+    }
+
+    &--desktop-show {
+      padding: 0;
     }
   }
 }

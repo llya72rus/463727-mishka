@@ -38,7 +38,7 @@
     margin-right: 30px;
     width: 32px;
     height: 32px;
-    background: url("#{$imgDir}/icon-video.svg");
+    background: url("#{$imgDir}/icon-video.svg") no-repeat 50%;
   }
 }
 
@@ -62,7 +62,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .prod-process {
     padding: 0 50px 32px;
   }
@@ -96,7 +96,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .prod-process {
     width: 1050px;
     margin: 0 auto;
@@ -105,7 +105,6 @@
 
   .prod-process__wrapper {
     @include flex();
-    align-items: center;
     margin-bottom: 106px;
     padding-bottom: 0;
   }

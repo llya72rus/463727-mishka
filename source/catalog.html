@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Каталог товаров</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -39,22 +39,14 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__menu-list">
-        <li class="main-nav__item">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--catalog">
           <a class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--knitting">
           <a class="main-nav__link main-nav__link--knitting" href="form.html">Вязание на заказ</a>
         </li>
-        <li class="main-nav__item main-nav__item--desktop-show">
-          <a class="main-nav__link" href="#">Новые поступления</a>
-        </li>
-        <li class="main-nav__item main-nav__item--desktop-show main-nav__item--sale">
-          <a class="main-nav__link" href="#">Распродажа</a>
-        </li>
-      </ul>
-      <ul class="main-nav__user-panel-list">
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--search">
           <a class="main-nav__link main-nav__link--search" href="#">
             <svg class="main-nav__img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
               y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6"
@@ -65,8 +57,22 @@
             Поиск по сайту
           </a>
         </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Корзина: пока пуста</a>
+        <li class="main-nav__item main-nav__item--cart">
+          <a class="main-nav__link" href="#">
+            <svg class="main-nav__img main-nav__img--cart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
+              xml:space="preserve">
+              <path d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"
+              />
+            </svg>
+            Корзина: пока пуста
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--desktop-show main-nav__item--new">
+          <a class="main-nav__link main-nav__link--desktop-show" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__item main-nav__item--desktop-show main-nav__item--sale">
+          <a class="main-nav__link main-nav__link--desktop-show" href="#">Распродажа</a>
         </li>
         <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
       </ul>

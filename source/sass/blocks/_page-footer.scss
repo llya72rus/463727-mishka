@@ -22,8 +22,7 @@
 }
 
 .page-footer__copyright {
-  @include flex();
-  justify-content: center;
+  @include flex(center);
   padding-top: 27px;
   border-top: 1px solid #e5e5e5;
 }
@@ -40,9 +39,10 @@
   fill: $secondary-color;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .page-footer__wrapper {
     @include flex();
+    align-items: stretch;
     width: 668px;
   }
 
@@ -60,7 +60,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 1050px;
   }
