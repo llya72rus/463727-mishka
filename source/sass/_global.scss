@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  max-width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
   color: $black;
@@ -42,22 +42,4 @@ button {
 img {
   width: 100%;
   height: auto;
-}
-
-.page-title {
-  margin: 0;
-  font-size: 25px;
-  line-height: 1.2;
-}
-
-.inner-header__wrapper {
-  margin-bottom: 30px;
-  padding: 72px 30px;
-  background-color: $grey-dark;
-  border-top: 2px solid $grey-lighten;
-  text-align: center;
-}
-
-.inner-header__title {
-  font-size: 27px;
 }

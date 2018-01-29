@@ -3,9 +3,37 @@
 }
 
 .catalog__list {
-  @include list();
+  @include reset-list();
 }
 
 .catalog__product {
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .catalog__list {
+    @include flex();
+    align-items: stretch;
+    margin-bottom: 57px;
+  }
+
+  .catalog__item {
+    width: 30.09%;
+  }
+
+  .catalog__product {
+    margin-bottom: 0;
+  }
 }

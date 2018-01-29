@@ -1,5 +1,5 @@
-.products__list {
-  @include list();
+.products {
+  @include reset-list();
 }
 
 .products__item {
@@ -13,9 +13,32 @@
 }
 
 .products__title {
-  padding: 30px;
   margin: 0;
-  color: $black;
+  padding: 30px;
+  padding-right: 145px;
+  color: $white;
   font-size: 19px;
   line-height: 1.26;
+}
+
+@media (min-width: $tablet-width) {
+  .products {
+    @include flex;
+    width: 100%;
+  }
+
+  .products__item {
+    width: 50%;
+  }
+
+  .products__title {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__title {
+    padding-right: 345px;
+  }
 }

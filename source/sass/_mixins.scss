@@ -1,11 +1,17 @@
-@mixin flex ($just-cont: space-between) {
+@mixin flex ($just-cont: space-between, $align-items: center) {
   display: flex;
   justify-content: $just-cont;
+  align-items: $align-items;
   flex-wrap: wrap;
 }
 
-@mixin list() {
+@mixin reset-list() {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin mobile-centerer() {
+  width: 260px;
+  margin: 0 auto;
 }
