@@ -1,6 +1,6 @@
 .reviews__wrapper {
   position: relative;
-  margin-bottom: 87px;
+  margin-bottom: 92px;
   padding: 0 9.3%;
 
   &::after {
@@ -38,7 +38,6 @@
 
 .reviews__author-name {
   display: block;
-  max-width: 70%;
   margin-bottom: 5px;
   font-size: 17px;
   line-height: 1.4;
@@ -47,7 +46,6 @@
 
 .reviews__author-nickname {
   display: block;
-  max-width: 70%;
   color: $primary-color;
   line-height: 1.76;
 }
@@ -82,12 +80,12 @@
   }
 
   .reviews__title {
-    margin-bottom: 46px;
+    margin-bottom: 51px;
   }
 
   .reviews__text {
     @include font-params-tablet();
-    margin-bottom: 57px;
+    margin-bottom: 62px;
   }
 
   .reviews__toggles {
@@ -103,11 +101,13 @@
   }
 
   .reviews__author-name {
+    max-width: 70%;
     font-size: 18px;
     line-height: 1.33;
   }
 
   .reviews__author-nickname {
+    max-width: 70%;
     font-size: 17px;
     line-height: 1.76;
   }

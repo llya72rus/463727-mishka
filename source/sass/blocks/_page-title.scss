@@ -1,6 +1,14 @@
 .page-title {
   font-size: 25px;
   line-height: 1.2;
+
+  &--top {
+    font-size: 27px;
+  }
+
+  &--contacts {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  padding-top: 22px;
+  padding: 22px 0;
 }
 
 .main-nav__list {
@@ -118,7 +118,7 @@
   }
 
   .main-nav--opened .main-nav__list {
-    margin-top: 20px;
+    margin-top: 21px;
   }
 
   .main-nav--nojs .main-nav__item:not(.main-nav__item--delivery):not(.main-nav__item--new):not(.main-nav__item--sale) {
@@ -136,7 +136,6 @@
   }
 
   .main-nav__item {
-    margin-bottom: 7px;
     border-top: none;
 
     &--search {
@@ -183,7 +182,7 @@
 
     &--catalog,
     &--knitting {
-      padding: 10px 0;
+      padding: 17px 0;
       font-size: 15px;
     }
 
