@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  padding-top: 20px;
+  padding-top: 22px;
 }
 
 .main-nav__list {
@@ -115,6 +115,10 @@
 
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    margin-top: 20px;
   }
 
   .main-nav--nojs .main-nav__item:not(.main-nav__item--delivery):not(.main-nav__item--new):not(.main-nav__item--sale) {

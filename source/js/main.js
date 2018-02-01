@@ -12,3 +12,16 @@ navToggle.addEventListener('click', function() {
     navMain.classList.add('main-nav--closed');
   }
 });
+
+var modal = document.querySelector('.modal');
+var orderBtn = document.querySelector('.popular-product__order');
+var addToCart = document.querySelector('.modal__add');
+
+orderBtn.addEventListener('click', function() {
+  modal.classList.add('modal--show');
+});
+
+addToCart.addEventListener('click', function() {
+  modal.classList.remove('modal--show');
+});
+

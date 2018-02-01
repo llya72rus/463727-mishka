@@ -27,6 +27,10 @@
     margin-bottom: 31px;
   }
 
+  &--extra {
+    margin-bottom: 15px;
+  }
+
   &--email {
     margin-bottom: 29px;
   }
@@ -179,7 +183,6 @@
 .main-form__textarea {
   width: 100%;
   min-height: 140px;
-  margin-bottom: 14px;
   padding: 15px;
   padding-top: 12px;
   color: $primary-color;
@@ -294,7 +297,7 @@
       margin-bottom: 0;
     }
 
-    &--add {
+    &--extra {
       margin-bottom: 53px;
     }
   }
@@ -421,6 +424,18 @@
     &--type {
       margin-bottom: 65px;
     }
+
+    &--tel {
+      margin-bottom: 18px;
+    }
+
+    &--name {
+      margin-bottom: 51px;
+    }
+
+    &--extra {
+      margin-bottom: 51px;
+    }
   }
 
   .main-form__fieldset-wrapper {
@@ -434,6 +449,11 @@
 
   .main-form__grey-wrapper {
     padding: 39px 0 64px;
+
+    &--bottom {
+      padding-top: 44px;
+      padding-bottom: 49px;
+    }
   }
 
   .main-form__fieldset {
@@ -457,6 +477,12 @@
 
   .main-form__bottom-info {
     width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-form__send-order {
+    width: auto;
   }
 
   .main-form__label {

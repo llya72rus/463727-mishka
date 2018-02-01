@@ -26,6 +26,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-form {
+    margin-bottom: 47px;
+  }
+
   .page-form__text {
     width: 700px;
     margin: 0 auto 52px;
