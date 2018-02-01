@@ -23,6 +23,10 @@
     position: relative;
     margin-bottom: 78px;
 
+    &--knitting {
+      margin-bottom: 69px;
+    }
+
     &::before,
     &::after {
       content: "";

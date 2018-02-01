@@ -89,14 +89,14 @@
         <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
           детали.</p>
         <form action="https://echo.htmlacademy.ru" method="post" class="main-form">
-          <div class="main-form__wrapper">
+          <div class="main-form__wrapper main-form__wrapper--type">
             <fieldset class="main-form__fieldset">
-              <legend class="main-form__title">Тип</legend>
+              <legend class="main-form__title"><span>Тип</span></legend>
               <div class="main-form__fieldset-wrapper">
                 <p class="main-form__item">
                   <input class="main-form__hidden-input visually-hidden" type="radio" name="type" value="interior-accessory" id="interior-accessory"
                     checked>
-                  <label class="main-form__label main-form__label--radio" for="interior-accessory">Аксессуар для интерьера</label>
+                  <label class="main-form__label main-form__label--radio" for="interior-accessory">Аксессуар для <br> интерьера</label>
                 </p>
                 <p class="main-form__item">
                   <input class="main-form__hidden-input visually-hidden" type="radio" name="type" value="toy" id="toy">
@@ -106,9 +106,9 @@
             </fieldset>
           </div>
           <div class="main-form__grey-wrapper">
-            <div class="main-form__wrapper">
+            <div class="main-form__wrapper main-form__wrapper--color">
               <fieldset class="main-form__fieldset main-form__fieldset--color">
-                <legend class="main-form__title">Цвет</legend>
+                <legend class="main-form__title main-form__title--color">Цвет</legend>
                 <div class="main-form__fieldset-wrapper main-form__fieldset-wrapper--color">
                   <p class="main-form__item main-form__item--color">
                     <input class="main-form__hidden-input visually-hidden" type="checkbox" name="color-white" id="color-white" checked>
@@ -138,9 +138,9 @@
               </div>
             </div>
           </div>
-          <div class="main-form__wrapper">
+          <div class="main-form__wrapper main-form__wrapper--name">
             <fieldset class="main-form__fieldset">
-              <legend class="main-form__title">ФИО</legend>
+              <legend class="main-form__title main-form__title--initials">ФИО</legend>
               <div class="main-form__fieldset-wrapper">
                 <p class="main-form__item main-form__item--name">
                   <label for="first-name" class="main-form__label-name">Имя:</label>
@@ -157,18 +157,18 @@
               </div>
             </fieldset>
           </div>
-          <div class="main-form__grey-wrapper">
+          <div class="main-form__grey-wrapper main-form__grey-wrapper--bottom">
             <div class="main-form__wrapper main-form__wrapper--tel">
               <fieldset class="main-form__fieldset">
-                <legend class="main-form__title main-form__title--small-mb">Тел</legend>
+                <legend class="main-form__title main-form__title--tel">Тел</legend>
                 <div class="main-form__fieldset-wrapper">
                   <input class="main-form__input" type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
                 </div>
               </fieldset>
             </div>
-            <div class="main-form__wrapper">
+            <div class="main-form__wrapper main-form__wrapper--email">
               <fieldset class="main-form__fieldset">
-                <legend class="main-form__title main-form__title--small-mb">E-mail</legend>
+                <legend class="main-form__title main-form__title--email">E-mail</legend>
                 <div class="main-form__fieldset-wrapper">
                   <input class="main-form__input" type="email" placeholder="Ваш Email*" required>
                 </div>
@@ -177,7 +177,7 @@
           </div>
           <div class="main-form__wrapper main-form__wrapper--add">
             <fieldset class="main-form__fieldset">
-              <legend class="main-form__title main-form__title--small-mb">Доп</legend>
+              <legend class="main-form__title main-form__title--extra">Доп</legend>
               <div class="main-form__fieldset-wrapper">
                 <textarea class="main-form__textarea" name="additional" id="additional-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
