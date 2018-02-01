@@ -2,6 +2,7 @@
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "_fonts.scss";
+@import "_global.scss";
 @import "blocks/_buttons.scss";
 @import "blocks/_catalog.scss";
 @import "blocks/_contacts.scss";
@@ -13,7 +14,6 @@
 @import "blocks/_page-footer.scss";
 @import "blocks/_page-form.scss";
 @import "blocks/_page-header.scss";
-@import "blocks/_page-title.scss";
 @import "blocks/_popular-product.scss";
 @import "blocks/_product.scss";
 @import "blocks/_products.scss";
@@ -21,4 +21,4 @@
 @import "blocks/_promo.scss";
 @import "blocks/_reviews.scss";
 @import "blocks/_social.scss";
-@import "_global.scss";
+@import "blocks/_page-title.scss";
