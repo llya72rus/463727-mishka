@@ -415,15 +415,25 @@
 @media (min-width: $desktop-width) {
   .main-form__wrapper {
     width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+
+    &--type {
+      margin-bottom: 65px;
+    }
   }
 
   .main-form__fieldset-wrapper {
     width: 700px;
 
     &--color {
-      width: 728px;
+      width: 789px;
       justify-content: space-between;
     }
+  }
+
+  .main-form__grey-wrapper {
+    padding: 39px 0 64px;
   }
 
   .main-form__fieldset {
@@ -431,13 +441,14 @@
     padding-left: 64px;
 
     &--color {
-      width: 902px;
+      width: 964px;
       margin: 0;
     }
   }
 
-  .main-form__item--color {
-    width: 205px;
+  .main-form__item--color:nth-of-type(even),
+  .main-form__item--color:nth-of-type(odd) {
+    width: 33.33%;
   }
 
   .main-form__item--black {
@@ -446,5 +457,9 @@
 
   .main-form__bottom-info {
     width: 700px;
+  }
+
+  .main-form__label {
+    padding-left: 80px;
   }
 }

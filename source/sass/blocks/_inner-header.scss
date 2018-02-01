@@ -62,6 +62,15 @@
 @media (min-width: $desktop-width) {
   .inner-header {
     margin-bottom: 133px;
+
+    &--knitting {
+      margin-bottom: 125px;
+    }
+  }
+
+  .inner-header__title {
+    font-size: 53px;
+    line-height: 1.1;
   }
 
   .inner-header__wrapper {
