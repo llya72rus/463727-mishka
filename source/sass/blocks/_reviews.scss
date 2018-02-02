@@ -71,11 +71,13 @@
   }
 
   .reviews__wrapper {
+    @include flex($just-cont: flex-start, $align-items: stretch);
     margin-bottom: 0;
     padding: 80px 6.5% 50px;
   }
 
   .reviews__list {
+    order: 1;
     margin-bottom: 0;
   }
 
@@ -113,9 +115,9 @@
   }
 
   .reviews__write-link {
-    position: absolute;
-    top: 81px;
-    right: 6.5%;
+    width: 26.2%;
+    align-self: flex-start;
+    margin-left: auto;
     padding: 14px 37px;
   }
 }
@@ -123,18 +125,21 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1050px;
-    margin: 0 auto 158px;
+    margin: 0 auto 160px;
   }
 
   .reviews__wrapper {
     width: auto;
     margin: 0;
-    margin-bottom: 80px;
     padding: 72px 95px 97px 175px;
   }
 
   .reviews__text {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
+  }
+
+  .reviews__title {
+    margin-bottom: 48px;
   }
 
   .reviews__write-link {

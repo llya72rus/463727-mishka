@@ -117,13 +117,17 @@
     &--rocket {
       margin-bottom: 23px;
     }
+
+    &--gift {
+      margin-bottom: 15px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .features {
     width: 1050px;
-    margin: 0 auto 83px;
+    margin: 0 auto 87px;
     padding-left: 175px;
     padding-right: 175px;
   }

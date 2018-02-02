@@ -9,4 +9,14 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $primary-color;
+    color: rgba(124, 124, 124, 0.3);
+  }
 }

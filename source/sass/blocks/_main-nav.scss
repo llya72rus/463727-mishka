@@ -9,7 +9,7 @@
 
 .main-nav__item {
   border-top: 2px solid $grey-lighten;
-  color: $black;
+
   font-size: 17px;
   line-height: 1.4;
   font-weight: 700;
@@ -25,6 +25,15 @@
   display: block;
   padding: 30px 0;
   padding-left: 25%;
+  color: $black;
+
+  &:hover {
+    color: rgba(102, 102, 102, 0.6);
+  }
+
+  &:active {
+    color: rgba(178, 178, 178, 0.3);
+  }
 }
 
 .main-nav__img {
