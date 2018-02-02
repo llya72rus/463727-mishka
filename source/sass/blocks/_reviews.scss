@@ -1,6 +1,6 @@
 .reviews__wrapper {
   position: relative;
-  margin-bottom: 92px;
+  margin-bottom: 91px;
   padding: 0 9.3%;
 
   &::after {
@@ -17,7 +17,7 @@
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 
 .reviews__list {
@@ -30,7 +30,7 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   font-size: 15px;
   line-height: 2;
   color: $primary-color;
@@ -38,7 +38,7 @@
 
 .reviews__author-name {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 17px;
   line-height: 1.4;
   font-weight: 700;

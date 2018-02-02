@@ -1,10 +1,11 @@
 .features {
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   padding: 0 9.3%;
 }
 
 .features__title {
-  margin-bottom: 28px;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .features__list {
@@ -15,10 +16,37 @@
 
 .features__item {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
   font-size: 17px;
   line-height: 1.12;
   font-weight: 700;
+
+  &--flower {
+    padding-right: 80px;
+  }
+
+  &--price {
+    margin-bottom: 39px;
+  }
+
+  &--handmade {
+    margin-bottom: 42px;
+  }
+
+  &--price,
+  &--handmade,
+  &--delivery {
+    padding-right: 50px;
+  }
+
+  &--likes {
+    margin-bottom: 31px;
+    padding-right: 55px;
+  }
+
+  &--support {
+    margin-bottom: 32px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -38,7 +66,7 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    margin-bottom: 76px;
+    margin-bottom: 79px;
     padding: 0 6.5%;
   }
 
@@ -85,6 +113,10 @@
 
   .features__img {
     margin-bottom: 19px;
+
+    &--rocket {
+      margin-bottom: 23px;
+    }
   }
 }
 
@@ -94,5 +126,11 @@
     margin: 0 auto 83px;
     padding-left: 175px;
     padding-right: 175px;
+  }
+
+  .features__img {
+    &--gift {
+      margin-bottom: 14px;
+    }
   }
 }
