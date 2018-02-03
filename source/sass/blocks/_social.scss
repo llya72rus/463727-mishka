@@ -1,5 +1,12 @@
 .social {
-  width: 145px;
+  width: 53%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 144px;
+    margin: 0;
+  }
 }

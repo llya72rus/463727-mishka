@@ -9,9 +9,9 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <div class="logo page-header__logo">
+  <header class="page-header page-header--inner">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="logo page-header__logo page-header__logo--inner">
         <a href="index.html">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px"
             height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
@@ -44,7 +44,7 @@
           <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="main-nav__item main-nav__item--knitting">
-          <a class="main-nav__link main-nav__link--knitting">Вязание на заказ</a>
+          <a class="main-nav__link main-nav__link--knitting main-nav__link--current">Вязание на заказ</a>
         </li>
         <li class="main-nav__item main-nav__item--search">
           <a class="main-nav__link main-nav__link--search" href="#">
@@ -79,20 +79,21 @@
     </nav>
   </header>
   <main class="page-main">
-    <header class="inner-header">
+    <header class="inner-header inner-header--knitting">
       <div class="inner-header__wrapper">
-        <h1 class="inner-header__title page-title">Вязание на заказ</h1>
+        <h1 class="inner-header__title">Вязание на заказ</h1>
       </div>
     </header>
     <section class="page-form">
-      <h2 class="visually-hidden">Форма заказа</h1>
+      <h2 class="visually-hidden">Форма заказа</h2>
         <p class="page-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
           детали.</p>
         <form action="https://echo.htmlacademy.ru" method="post" class="main-form">
-          <div class="main-form__wrapper">
+          <div class="main-form__wrapper main-form__wrapper--type">
             <fieldset class="main-form__fieldset">
-              <legend class="main-form__title">Тип</legend>
               <div class="main-form__fieldset-wrapper">
+              <h3 class="main-form__title main-form__title--type">Тип</h3>
+              <div class="main-form__fieldset-inner-wrapper">
                 <p class="main-form__item">
                   <input class="main-form__hidden-input visually-hidden" type="radio" name="type" value="interior-accessory" id="interior-accessory"
                     checked>
@@ -103,13 +104,15 @@
                   <label class="main-form__label main-form__label--radio" for="toy">Детская игрушка</label>
                 </p>
               </div>
+            </div>
             </fieldset>
           </div>
           <div class="main-form__grey-wrapper">
-            <div class="main-form__wrapper">
-              <fieldset class="main-form__fieldset main-form__fieldset--color">
-                <legend class="main-form__title">Цвет</legend>
+            <div class="main-form__wrapper main-form__wrapper--color">
+              <fieldset class="main-form__fieldset">
                 <div class="main-form__fieldset-wrapper main-form__fieldset-wrapper--color">
+                <h3 class="main-form__title main-form__title--color">Цвет</h3>
+                <div class="main-form__fieldset-inner-wrapper main-form__fieldset-inner-wrapper--color">
                   <p class="main-form__item main-form__item--color">
                     <input class="main-form__hidden-input visually-hidden" type="checkbox" name="color-white" id="color-white" checked>
                     <label for="color-white" class="main-form__label">Белый</label>
@@ -134,53 +137,62 @@
                     <input class="main-form__hidden-input visually-hidden" type="checkbox" name="color-orange" id="color-orange">
                     <label for="color-orange" class="main-form__label">Оранжевый</label>
                   </p>
+                  </div>
+                  </div>
               </fieldset>
-              </div>
             </div>
           </div>
-          <div class="main-form__wrapper">
+          <div class="main-form__wrapper main-form__wrapper--name">
             <fieldset class="main-form__fieldset">
-              <legend class="main-form__title">ФИО</legend>
               <div class="main-form__fieldset-wrapper">
+              <h3 class="main-form__title main-form__title--initials">ФИО</h3>
+              <div class="main-form__fieldset-inner-wrapper">
                 <p class="main-form__item main-form__item--name">
-                  <label for="first-name" class="main-form__label-name">Имя:</label>
+                  <label for="first-name" class="main-form__label-name main-form__label-name--firstname">Имя:</label>
                   <input class="main-form__input" type="text" name="first-name" id="first-name" placeholder="Введите ваше имя*" required>
                 </p>
                 <p class="main-form__item main-form__item--name">
-                  <label for="surname" class="main-form__label-name">Фамилия:</label>
+                  <label for="surname" class="main-form__label-name main-form__label-name--surname">Фамилия:</label>
                   <input class="main-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                 </p>
                 <p class="main-form__item main-form__item--name">
-                  <label for="patronymic" class="main-form__label-name">Отчество:</label>
+                  <label for="patronymic" class="main-form__label-name main-form__label-name--patronymic">Отчество:</label>
                   <input class="main-form__input" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
                 </p>
               </div>
+            </div>
             </fieldset>
           </div>
-          <div class="main-form__grey-wrapper">
+          <div class="main-form__grey-wrapper main-form__grey-wrapper--bottom">
             <div class="main-form__wrapper main-form__wrapper--tel">
               <fieldset class="main-form__fieldset">
-                <legend class="main-form__title main-form__title--small-mb">Тел</legend>
-                <div class="main-form__fieldset-wrapper">
+                <div class=" main-form__fieldset-wrapper">
+                <h3 class="main-form__title main-form__title--tel">Тел</h3>
+                <div class="main-form__fieldset-inner-wrapper">
                   <input class="main-form__input" type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+                </div>
                 </div>
               </fieldset>
             </div>
-            <div class="main-form__wrapper">
+            <div class="main-form__wrapper main-form__wrapper--email">
               <fieldset class="main-form__fieldset">
-                <legend class="main-form__title main-form__title--small-mb">E-mail</legend>
                 <div class="main-form__fieldset-wrapper">
+                <h3 class="main-form__title main-form__title--email">E-mail</h3>
+                <div class="main-form__fieldset-inner-wrapper">
                   <input class="main-form__input" type="email" placeholder="Ваш Email*" required>
                 </div>
+              </div>
               </fieldset>
             </div>
           </div>
-          <div class="main-form__wrapper main-form__wrapper--add">
+          <div class="main-form__wrapper main-form__wrapper--extra">
             <fieldset class="main-form__fieldset">
-              <legend class="main-form__title main-form__title--small-mb">Доп</legend>
               <div class="main-form__fieldset-wrapper">
+              <h3 class="main-form__title main-form__title--extra">Доп</h3>
+              <div class="main-form__fieldset-inner-wrapper">
                 <textarea class="main-form__textarea" name="additional" id="additional-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
+            </div>
             </fieldset>
           </div>
           <div class="main-form__bottom-info">
@@ -273,6 +285,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

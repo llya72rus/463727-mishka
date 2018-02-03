@@ -1,20 +1,63 @@
-.main-form {
-  margin-bottom: 55px;
+.main-form__wrapper {
+  position: relative;
+  margin-bottom: 29px;
+
+  &::before {
+    content: "";
+    top: 10px;
+    right: 0;
+    position: absolute;
+    width: 76%;
+    height: 1px;
+    background-color: $secondary-color;
+  }
+
+  &--type {
+    margin-bottom: 42px;
+  }
+
+  &--color {
+    margin-bottom: 38px;
+  }
+
+  &--extra {
+    margin-bottom: 13px;
+  }
+}
+
+.main-form__wrapper--email::before {
+  width: 69%;
 }
 
 .main-form__fieldset {
   margin: 0;
-  margin-bottom: 10px;
   padding: 0;
   border: none;
 }
 
 .main-form__item {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 19px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--color {
+    margin-bottom: 41px;
+  }
+
+  &--name {
+    margin-bottom: 23px;
+  }
+
+  &--extra {
+    margin-bottom: 13px;
+  }
 }
 
 .main-form__title {
+  margin: 0;
   margin-bottom: 30px;
   padding: 0;
   color: $secondary-color;
@@ -23,8 +66,24 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  &--small-mb {
-    margin-bottom: 10px;
+  &--color {
+    margin-bottom: 33px;
+  }
+
+  &--initials {
+    margin-bottom: 27px;
+  }
+
+  &--tel {
+    margin-bottom: 21px;
+  }
+
+  &--email {
+    margin-bottom: 22px;
+  }
+
+  &--extra {
+    margin-bottom: 24px;
   }
 }
 
@@ -37,9 +96,14 @@
   font-weight: 700;
   cursor: pointer;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
+  }
+
+  &::before {
+    top: -9px;
     left: 0;
     width: 38px;
     height: 38px;
@@ -47,23 +111,28 @@
   }
 
   &::after {
-    content: "";
-    position: absolute;
     display: none;
-    top: 7px;
-    left: 4px;
-    width: 33px;
-    height: 23px;
-    background-image: url("#{$imgDir}/icon-tick.svg");
+    top: 4px;
+    left: 8px;
+    width: 22px;
+    height: 16px;
+    background-image: url("#{$imgDir}/icon-tick-mobile.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
 .main-form__label--radio {
-  &::before {
+  max-width: 230px;
+
+  &::before,
+  &::after {
     content: "";
     position: absolute;
+  }
+
+  &::before {
+    top: -6px;
     left: 0;
     width: 38px;
     height: 38px;
@@ -72,9 +141,7 @@
   }
 
   &::after {
-    content: "";
-    position: absolute;
-    top: 12px;
+    top: 6px;
     left: 12px;
     width: 15px;
     height: 15px;
@@ -90,7 +157,7 @@
 
 .main-form__label-name {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-size: 17px;
   line-height: 1.2;
   font-weight: 700;
@@ -98,7 +165,7 @@
 
 .main-form__input {
   width: 100%;
-  padding: 0 15px 14px 0;
+  padding: 0 15px 16px 0;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid $black;
@@ -111,8 +178,9 @@
 
 .main-form__textarea {
   width: 100%;
-  margin-bottom: 17px;
+  min-height: 140px;
   padding: 15px;
+  padding-top: 12px;
   color: $primary-color;
   border: 2px solid $primary-color;
   font-size: 17px;
@@ -130,16 +198,18 @@
 .main-form__note {
   display: inline-block;
   vertical-align: baseline;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+  padding-right: 12px;
   color: $primary-color;
   font-size: 14px;
   line-height: 1.14;
 }
 
 .main-form__send-order {
+  width: 100%;
+  margin: 0 auto;
   padding-left: 45px;
   padding-right: 45px;
-  margin: 0 auto;
 }
 
 .main-form__bottom-info {
@@ -150,11 +220,11 @@
   .main-form__label {
     display: inline-block;
     vertical-align: baseline;
-    padding-left: 63px;
+    padding-left: 16%;
     font-size: 19px;
 
     &::before {
-      top: -11px;
+      top: -14px;
       left: 0;
       width: 54px;
       height: 52px;
@@ -162,7 +232,7 @@
     }
 
     &::after {
-      top: 4px;
+      top: 2px;
       left: 11px;
       width: 33px;
       height: 23px;
@@ -173,6 +243,8 @@
   }
 
   .main-form__label--radio {
+    max-width: 100%;
+
     &::after {
       top: 5px;
       left: 16px;
@@ -194,54 +266,76 @@
   }
 
   .main-form__wrapper {
-    width: 668px;
-    margin: 0 auto;
+    padding: 0 6.5%;
+
+    &::before {
+      display: none;
+    }
+
+    &--type {
+      margin-bottom: 67px;
+    }
 
     &--color {
-      padding-right: 38px;
+      margin-bottom: 0;
+    }
+
+    &--name {
+      margin-bottom: 47px;
     }
 
     &--tel {
-      margin-bottom: 20px;
+      margin-bottom: 37px;
     }
 
-    &--add {
+    &--email {
+      margin-bottom: 0;
+    }
+
+    &--extra {
       margin-bottom: 53px;
     }
   }
 
   .main-form__fieldset-wrapper {
-    width: 501px;
+    @include flex($align-items: flex-start);
+  }
+
+  .main-form__fieldset-inner-wrapper {
+    width: 75%;
     margin-left: auto;
 
     &--color {
-      @include flex(flex-start);
-      align-items: stretch;
+      @include flex($align-items: stretch);
     }
   }
 
   .main-form__grey-wrapper {
-    margin-bottom: 50px;
-    padding: 50px 0;
+    margin-bottom: 64px;
+    padding: 64px 0 66px;
     background-color: $grey-dark;
+
+    &--bottom {
+      padding-top: 65px;
+      padding-bottom: 51px;
+      margin-bottom: 49px;
+    }
   }
 
-  .main-form__fieldset {
-    @include flex(flex-start);
-    align-items: stretch;
-    margin-bottom: 0;
+  .main-form__item--color:nth-of-type(even) {
+    width: 47.71%;
   }
 
-  .main-form__item--color {
-    width: 50%;
+  .main-form__item--color:nth-of-type(odd) {
+    width: 52.29%;
   }
 
   .main-form__item {
     margin-bottom: 54px;
 
     &--name {
-      @include flex();
-      align-items: flex-start;
+      @include flex($align-items: flex-start);
+      margin-bottom: 37px;
     }
 
     &--orange,
@@ -250,23 +344,40 @@
     }
   }
 
+  .main-form__item--name:last-of-type {
+    margin-bottom: 0;
+  }
+
   .main-form__item-name {
     margin-right: 30px;
     font-size: 19px;
   }
 
   .main-form__label-name {
-    margin-right: 25px;
+    margin-right: 32px;
     margin-bottom: 0;
+    letter-spacing: 2px;
+
+    &--firstname {
+      margin-right: 23px;
+    }
+
+    &--surname {
+      margin-right: 20px;
+    }
+
+    &--patronymic {
+      margin-right: 21px;
+    }
   }
 
-  .main-form__fieldset--color label {
+  .main-form__fieldset-wrapper--color label {
     padding-left: 83px;
   }
 
   .main-form__input {
     font-size: 19px;
-    padding-left: 18px;
+    padding-left: 14px;
   }
 
   .main-form__item--name input {
@@ -276,12 +387,20 @@
 
   .main-form__title {
     margin-bottom: 0;
+
+    &--type {
+      padding-top: 3px;
+    }
+
+    &--extra {
+      padding-top: 16px;
+    }
   }
 
   .main-form__textarea {
     display: block;
     margin: 0;
-    min-height: 140px;
+    min-height: 143px;
     font-size: 19px;
     padding-left: 15px;
     padding-right: 15px;
@@ -293,49 +412,82 @@
 
   .main-form__bottom-info {
     @include flex();
-    width: 668px;
-    margin: 0 auto;
+    padding: 0 6.5%;
     text-align: left;
   }
 
   .main-form__note {
     order: 1;
     margin: 0;
+    margin-bottom: 5px;
+    padding-right: 0;
     font-size: 17px;
     line-height: 1.75;
   }
 
   .main-form__send-order {
+    width: 34.58%;
     margin: 0;
+    padding-left: 29px;
+    padding-right: 29px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-form__wrapper {
     width: 1050px;
+    margin: 0 auto;
+    padding: 0;
+
+    &--type {
+      margin-bottom: 65px;
+    }
+
+    &--tel {
+      margin-bottom: 37px;
+    }
+
+    &--name {
+      margin-bottom: 48px;
+    }
+
+    &--extra {
+      margin-bottom: 49px;
+    }
   }
 
-  .main-form__fieldset-wrapper {
+  .main-form__fieldset-inner-wrapper {
     width: 700px;
 
     &--color {
-      width: 728px;
+      width: 789px;
       justify-content: space-between;
     }
   }
 
-  .main-form__fieldset {
+  .main-form__grey-wrapper {
+    padding: 65px 0;
+
+    &--bottom {
+      margin-bottom: 51px;
+      padding-top: 65px;
+      padding-bottom: 49px;
+    }
+  }
+
+  .main-form__fieldset-wrapper {
     width: 875px;
     padding-left: 64px;
 
     &--color {
-      width: 902px;
+      width: 964px;
       margin: 0;
     }
   }
 
-  .main-form__item--color {
-    width: 205px;
+  .main-form__item--color:nth-of-type(even),
+  .main-form__item--color:nth-of-type(odd) {
+    width: 33.33%;
   }
 
   .main-form__item--black {
@@ -344,5 +496,23 @@
 
   .main-form__bottom-info {
     width: 700px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main-form__send-order {
+    width: auto;
+  }
+
+  .main-form__label {
+    padding-left: 80px;
+
+    &::before {
+      top: -13px;
+    }
+
+    &::after {
+      top: 2px;
+    }
   }
 }

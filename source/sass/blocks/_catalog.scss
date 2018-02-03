@@ -1,31 +1,36 @@
 .catalog {
-  padding: 0 30px;
+  margin-bottom: 30px;
+  padding: 0 9.3%;
 }
 
 .catalog__list {
   @include reset-list();
 }
 
-.catalog__product {
+.catalog__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog {
-    padding: 0 50px;
+    margin-bottom: 53px;
+    padding: 0 6.5%;
+  }
+
+  .catalog__item:not(:last-child) {
+    margin-bottom: 55px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1050px;
-    margin: 0 auto;
+    margin: 0 auto 58px;
     padding: 0;
   }
 
   .catalog__list {
-    @include flex();
-    align-items: stretch;
+    @include flex($align-items: stretch);
     margin-bottom: 57px;
   }
 
@@ -33,7 +38,11 @@
     width: 30.09%;
   }
 
-  .catalog__product {
+  .catalog__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
     margin-bottom: 0;
   }
 }

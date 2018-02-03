@@ -1,10 +1,11 @@
 .features {
-  @include mobile-centerer();
-  margin-bottom: 60px;
+  margin-bottom: 57px;
+  padding: 0 9.3%;
 }
 
 .features__title {
-  margin-bottom: 28px;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .features__list {
@@ -15,13 +16,44 @@
 
 .features__item {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
   font-size: 17px;
   line-height: 1.12;
   font-weight: 700;
 
-  &--last {
+  &--flower {
+    padding-right: 80px;
+  }
+
+  &--price {
+    margin-bottom: 39px;
+  }
+
+  &--handmade {
+    margin-bottom: 42px;
+  }
+
+  &--price,
+  &--handmade,
+  &--delivery {
+    padding-right: 50px;
+  }
+
+  &--likes {
+    margin-bottom: 31px;
+    padding-right: 55px;
+  }
+
+  &--support {
+    margin-bottom: 32px;
+  }
+
+  &:last-child {
     margin-bottom: 0;
+  }
+
+  br {
+    display: none;
   }
 }
 
@@ -34,41 +66,62 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    width: 668px;
+    margin-bottom: 79px;
+    padding: 0 6.5%;
   }
 
   .features__title {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   .features__list {
-    @include flex();
-    align-items: stretch;
+    @include flex($align-items: stretch);
   }
 
   .features__item {
     width: 50%;
-    padding-right: 65px;
+    margin-bottom: 64px;
+    font-size: 20px;
+    line-height: 1.1;
 
-    &:nth-child(4) {
+    &--flower {
+      padding-right: 105px;
+    }
+
+    &--handmade {
       order: 1;
     }
 
-    &:nth-child(2) {
+    &--price {
       order: 2;
+      padding-right: 75px;
     }
 
-    &:nth-child(5) {
+    &--support {
       order: 3;
     }
 
-    &:nth-child(3) {
+    &--likes {
       order: 4;
+      margin-bottom: 0;
+      padding-right: 100px;
     }
 
-    &:nth-child(6) {
+    &--delivery {
       order: 5;
+    }
+  }
+
+  .features__img {
+    margin-bottom: 19px;
+
+    &--rocket {
+      margin-bottom: 23px;
+    }
+
+    &--gift {
+      margin-bottom: 15px;
     }
   }
 }
@@ -76,7 +129,14 @@
 @media (min-width: $desktop-width) {
   .features {
     width: 1050px;
+    margin: 0 auto 87px;
     padding-left: 175px;
     padding-right: 175px;
+  }
+
+  .features__img {
+    &--gift {
+      margin-bottom: 14px;
+    }
   }
 }

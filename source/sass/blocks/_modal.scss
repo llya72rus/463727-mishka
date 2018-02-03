@@ -1,0 +1,22 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  z-index: 15;
+  background: rgba(255, 255, 255, 0.75);
+
+  &--show {
+    @include flex();
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    justify-content: center;
+  }
+}

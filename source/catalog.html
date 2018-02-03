@@ -9,9 +9,9 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="main-nav">
-      <div class="logo page-header__logo">
+  <header class="page-header page-header--inner">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="logo page-header__logo page-header__logo--inner">
         <a href="index.html">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="85.589px"
             height="35.034px" viewBox="32.458 20.216 85.589 35.034" enable-background="new 32.458 20.216 85.589 35.034" xml:space="preserve">
@@ -41,7 +41,7 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--catalog">
-          <a class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
+          <a class="main-nav__link main-nav__link--catalog main-nav__link--current">Каталог товаров</a>
         </li>
         <li class="main-nav__item main-nav__item--knitting">
           <a class="main-nav__link main-nav__link--knitting" href="form.html">Вязание на заказ</a>
@@ -81,7 +81,7 @@
   <main class="page-main">
     <header class="inner-header">
       <div class="inner-header__wrapper">
-        <h1 class="page-title inner-header__title">Каталог товаров</h1>
+        <h1 class="inner-header__title">Каталог товаров</h1>
       </div>
     </header>
     <section class="catalog">
@@ -143,7 +143,7 @@
               <img class="product__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
             </a>
             <div class="product__text-wrapper product__text-wrapper--last">
-              <h3 class="product__title">
+              <h3 class="product__title product__title--big-basket">
                 <a href="#">Большая корзинка для игрушек</a>
               </h3>
               <p class="product__desc">Диаметр 30 см, высота 30 см</p>
@@ -277,6 +277,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
