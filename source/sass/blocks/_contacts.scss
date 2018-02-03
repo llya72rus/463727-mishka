@@ -94,6 +94,10 @@
 
   .contacts__desc--address {
     padding-right: 0;
+
+    span {
+      display: block;
+    }
   }
 
   .contacts__write-us-link {
@@ -129,6 +133,10 @@
 
   .contacts__title {
     margin-bottom: 47px;
+  }
+
+  .contacts__termin {
+    margin-right: 26px;
   }
 
   .contacts__map {

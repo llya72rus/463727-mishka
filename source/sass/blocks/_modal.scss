@@ -1,105 +1,19 @@
 .modal {
-  position: absolute;
-  display: none;
-  height: 3948px;
-  opacity: 0.9;
+  position: fixed;
   top: 0;
-  left: 0;
+  display: none;
+  height: 100vh;
+  opacity: 0.9;
   background-color: $white;
   width: 100%;
-  z-index: 5000;
 
   &--show {
-    display: block;
+    @include flex();
   }
-}
-
-.modal__form {
-  position: absolute;
-  top: 1079px;
-  z-index: 10000;
-  width: 100%;
-  padding: 33px 9.3% 46px;
-  background-color: $white;
-  border-top: 1px solid #c6c7c6;
-  border-bottom: 1px solid #c6c7c6;
-  box-shadow: 0 10px 10px 0 #c6c7c6;
-}
-
-.modal__title {
-  margin: 0;
-  font-size: 25px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.modal__info {
-  display: block;
-  margin-bottom: 30px;
-  color: $primary-color;
-  font-size: 15px;
-  line-height: 2;
-  text-align: center;
-}
-
-.modal__sizes-list {
-  @include reset-list();
-  @include flex();
-  margin-bottom: 31px;
-}
-
-.modal__sizes-item {
-  width: 31.5%;
-}
-
-.modal__sizes-btn {
-  display: block;
-  width: 100%;
-  padding: 15px 33px;
-  background-color: transparent;
-  border: 2px solid $grey-lighten;
-  font-size: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
-
-  &--active {
-    border-color: $secondary-color;
-  }
-}
-
-.modal__add {
-  display: block;
-  width: 100%;
-  padding: 18px 60px;
-  background-color: $secondary-color;
-  color: $white;
-  border: none;
-  font-size: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .modal {
-    padding: 0 13%;
-  }
-
-  .modal__form {
-    width: 73.7%;
-    padding: 46px 14.0625%;
-    border: 1px solid #c6c7c6;
-    box-shadow: 0 0 10px 10px #c6c7c6;
-  }
-
-  .modal__title {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal__form {
-    width: 566px;
-    padding: 46px 110px;
+    justify-content: center;
   }
 }

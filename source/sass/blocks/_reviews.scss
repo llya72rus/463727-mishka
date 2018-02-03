@@ -118,6 +118,7 @@
     width: 26.2%;
     align-self: flex-start;
     margin-left: auto;
+    margin-top: 3px;
     padding: 14px 37px;
   }
 }
@@ -131,11 +132,12 @@
   .reviews__wrapper {
     width: auto;
     margin: 0;
-    padding: 72px 95px 97px 175px;
+    padding: 72px 0 97px 175px;
   }
 
   .reviews__text {
     margin-bottom: 42px;
+    padding-right: 105px;
   }
 
   .reviews__title {
@@ -143,7 +145,8 @@
   }
 
   .reviews__write-link {
-    right: 0;
+    width: auto;
+    margin-top: 9px;
   }
 
 

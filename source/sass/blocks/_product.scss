@@ -1,11 +1,12 @@
 .product__text-wrapper {
-  padding: 28px 11.75% 27px;
+  padding: 28px 10% 27px;
   border: 1px solid $grey-light;
 }
 
 .product__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  padding-right: 5px;
   color: $black;
   font-size: 17px;
   line-height: 1.4;
@@ -83,6 +84,7 @@
   }
 
   .product__price {
+    padding-left: 5px;
     font-size: 17px;
     line-height: 1.4;
   }
@@ -113,5 +115,9 @@
 
   .product__desc {
     margin-bottom: 0;
+  }
+
+  .product__price {
+    padding-left: 0;
   }
 }

@@ -85,28 +85,30 @@
     font-size: 20px;
     line-height: 1.1;
 
-    br {
-      display: inline;
+    &--flower {
+      padding-right: 105px;
     }
 
-    &:nth-child(4) {
+    &--handmade {
       order: 1;
     }
 
-    &:nth-child(2) {
+    &--price {
       order: 2;
+      padding-right: 75px;
     }
 
-    &:nth-child(5) {
+    &--support {
       order: 3;
     }
 
-    &:nth-child(3) {
+    &--likes {
       order: 4;
       margin-bottom: 0;
+      padding-right: 100px;
     }
 
-    &:nth-child(6) {
+    &--delivery {
       order: 5;
     }
   }

@@ -1,27 +1,39 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__toggle');
+(function() {
+  'use strict';
 
-navMain.classList.remove('main-nav--nojs');
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
 
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.remove('main-nav--opened');
-    navMain.classList.add('main-nav--closed');
+  // Без проверки на существование элемента JS бросит ошибку, что указанный ДОМ-узел не найден
+    // Uncaught TypeError: Cannot read property 'addEventListener' of null
+  if (navMain && navToggle) {
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add('main-nav--closed');
+      }
+    });
+
   }
-});
 
-var modal = document.querySelector('.modal');
-var orderBtn = document.querySelector('.popular-product__order');
-var addToCart = document.querySelector('.modal__add');
+  var modal = document.querySelector('.modal');
+  var orderBtn = document.querySelector('.popular-product__order');
+  var addToCart = document.querySelector('.sizes__add');
 
-orderBtn.addEventListener('click', function() {
-  modal.classList.add('modal--show');
-});
+  if (modal && orderBtn && addToCart) {
+    orderBtn.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modal.classList.add('modal--show');
+    });
 
-addToCart.addEventListener('click', function() {
-  modal.classList.remove('modal--show');
-});
-
+    addToCart.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modal.classList.remove('modal--show');
+    });
+  }
+})();

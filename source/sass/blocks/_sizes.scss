@@ -1,0 +1,87 @@
+.sizes {
+  width: 100%;
+  padding: 33px 9.3% 46px;
+  background-color: $white;
+  border-top: 1px solid #c6c7c6;
+  border-bottom: 1px solid #c6c7c6;
+  box-shadow: 0 10px 10px 0 #c6c7c6;
+}
+
+.sizes__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sizes__info {
+  display: block;
+  margin-bottom: 30px;
+  color: $primary-color;
+  font-size: 15px;
+  line-height: 2;
+  text-align: center;
+}
+
+.sizes__list {
+  @include reset-list();
+  @include flex();
+  margin-bottom: 31px;
+}
+
+.sizes__item {
+  width: 31.5%;
+}
+
+.sizes__btn {
+  display: block;
+  width: 100%;
+  padding: 15px 33px;
+  border: 2px solid $grey-lighten;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sizes__radio:checked + .sizes__btn {
+  border-color: $secondary-color;
+}
+
+.sizes__add {
+  display: block;
+  width: 100%;
+  padding: 18px 60px;
+  background-color: $secondary-color;
+  color: $white;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    justify-content: center;
+  }
+
+  .sizes {
+    width: 566px;
+    padding: 46px 108px;
+    border: 1px solid #c6c7c6;
+    box-shadow: 0 0 10px 10px #c6c7c6;
+  }
+
+  .sizes__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sizes {
+    width: 566px;
+    padding: 46px 110px;
+  }
+}

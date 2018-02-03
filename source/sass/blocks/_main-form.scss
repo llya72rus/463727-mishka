@@ -129,6 +129,8 @@
 }
 
 .main-form__label--radio {
+  max-width: 230px;
+
   &::before,
   &::after {
     content: "";
@@ -228,7 +230,7 @@
     font-size: 19px;
 
     &::before {
-      top: -11px;
+      top: -14px;
       left: 0;
       width: 54px;
       height: 52px;
@@ -236,7 +238,7 @@
     }
 
     &::after {
-      top: 4px;
+      top: 2px;
       left: 11px;
       width: 33px;
       height: 23px;
@@ -247,9 +249,7 @@
   }
 
   .main-form__label--radio {
-    br {
-      display: none;
-    }
+    max-width: 100%;
 
     &::after {
       top: 5px;
@@ -465,9 +465,10 @@
 
   .main-form__grey-wrapper {
     margin-bottom: 46px;
-    padding: 47px 0 64px;
+    padding: 44px 0 65px;
 
     &--bottom {
+      margin-bottom: 28px;
       padding-top: 44px;
       padding-bottom: 49px;
     }

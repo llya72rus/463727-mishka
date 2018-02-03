@@ -13,6 +13,10 @@
   line-height: 1.26;
   font-weight: 700;
 
+  span {
+    display: block;
+  }
+
   &--interior-items {
     background-color: $secondary-color;
   }
