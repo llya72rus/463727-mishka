@@ -27,11 +27,11 @@
   padding-left: 25%;
   color: $black;
 
-  &:hover {
+  &:not(.main-nav__link--current):hover {
     color: rgba(102, 102, 102, 0.6);
   }
 
-  &:active {
+  &:not(.main-nav__link--current):active {
     color: rgba(178, 178, 178, 0.3);
   }
 }
@@ -153,7 +153,9 @@
     }
 
     &--cart {
-      margin-left: auto;
+      flex-grow: 1;
+      flex-basis: 33%;
+      text-align: right;
     }
 
     &--catalog {
@@ -231,6 +233,7 @@
     }
 
     &--cart {
+      flex-basis: auto;
       order: 3;
     }
 
