@@ -71,6 +71,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    outline: none;
 
     &::before {
       content: "";
@@ -94,6 +95,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    outline: none;
 
     &::before {
       content: "";
@@ -104,6 +106,7 @@
       height: 2px;
       background-color: #000000;
       transform: rotate(45deg);
+      transition: 0.1s all linear;
     }
 
     &::after {
