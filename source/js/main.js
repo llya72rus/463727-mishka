@@ -4,8 +4,6 @@
   var navMain = document.querySelector('.main-nav');
   var navToggle = document.querySelector('.main-nav__toggle');
 
-  // Без проверки на существование элемента JS бросит ошибку, что указанный ДОМ-узел не найден
-    // Uncaught TypeError: Cannot read property 'addEventListener' of null
   if (navMain && navToggle) {
     navMain.classList.remove('main-nav--nojs');
 
