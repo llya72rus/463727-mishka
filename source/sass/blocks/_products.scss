@@ -13,6 +13,11 @@
   line-height: 1.26;
   font-weight: 700;
 
+  &:active {
+    color: rgba(151, 226, 210, 1);
+    transition: none;
+  }
+
   span {
     display: block;
   }
@@ -26,8 +31,7 @@
   }
 }
 
-.products__link--interior-items::after,
-.products__link--toys::after {
+.products__link::after {
   content: "";
   position: absolute;
   top: 23px;
@@ -62,6 +66,11 @@
   .products__link {
     padding: 27px 11%;
     line-height: 1.5;
+    transition: 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 }
 
