@@ -1,5 +1,14 @@
 .page-header__logo {
+  @include flex($just-cont: center);
   width: 100%;
+
+  &:not(.page-header__logo--current):hover {
+    opacity: 0.6;
+  }
+
+  &:not(.page-header__logo--current):active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -9,16 +18,20 @@
 
   .page-header__logo {
     position: absolute;
-    width: 86px;
-    padding-top: 27px;
+    top: 20px;
+    left: 6.5%;
+    width: 112px;
+    height: 46px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
+    width: 149px;
+    height: 72px;
     margin: auto;
   }
 }
