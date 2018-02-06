@@ -8,7 +8,7 @@
 
 .inner-header__wrapper {
   padding: 71px 9.3% 75px;
-  background-color: #f9f9f9;
+  background-color: $grey-darken;
   text-align: center;
 }
 
@@ -37,7 +37,7 @@
     &::before {
       bottom: 94%;
       height: 91px;
-      background-color: #f9f9f9;
+      background-color: $grey-darken;
       border-top: 1px solid #dfdfdf;
       z-index: -1;
     }
