@@ -30,14 +30,15 @@
 }
 
 .page-footer__copyright {
-  @include flex(center);
-  padding-top: 15px;
+  @include flex($just-cont: center, $align-items: stretch);
+  padding-top: 21px;
   border-top: 1px solid #e5e5e5;
 }
 
 .page-footer__copyright-text {
   margin: 0;
   margin-right: 30px;
+  padding-top: 4px;
   font-size: 19px;
   line-height: 1.1;
   font-weight: 700;
@@ -50,14 +51,14 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     @include flex($just-cont: flex-start, $align-items: stretch);
-    width: 688px;
+    width: 668px;
     margin: 0 auto;
     padding: 55px 0;
   }
 
   .page-footer__logo {
     display: block;
-    margin-right: 183px;
+    margin-right: 160px;
   }
 
   .page-footer__logo:not(.page-footer__logo--current) a:hover {
@@ -75,7 +76,7 @@
 
   .page-footer__copyright {
     margin-left: auto;
-    padding-top: 0;
+    padding-top: 4px;
     border-top: none;
   }
 }

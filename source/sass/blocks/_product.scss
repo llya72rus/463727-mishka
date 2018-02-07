@@ -10,6 +10,14 @@
   color: $black;
   font-size: 17px;
   line-height: 1.4;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__desc {
@@ -42,12 +50,27 @@
 
 .product__cart-img {
   opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: $secondary-color;
+  }
+
+  &:active {
+    fill: $secondary-color;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .product {
     @include flex($align-items: stretch);
     min-height: 334px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 2px 0 $primary-color;
+    }
   }
 
   .product__text-wrapper {
