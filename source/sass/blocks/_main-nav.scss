@@ -40,12 +40,16 @@
   fill: $secondary-color;
 }
 
+.main-nav__link:active svg {
+  fill: $secondary-color;
+  opacity: 0.3;
+}
+
 .main-nav__img {
   position: absolute;
   top: 35px;
   left: 10%;
   fill: #d3d2d2;
-
 }
 
 .main-nav__input::placeholder {
