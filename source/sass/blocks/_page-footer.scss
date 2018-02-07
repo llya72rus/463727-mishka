@@ -20,6 +20,15 @@
   display: block;
 }
 
+.page-footer__link-academy:hover svg {
+  fill: #46c1ae;
+}
+
+.page-footer__link-academy:active svg {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 .page-footer__copyright {
   @include flex(center);
   padding-top: 15px;
@@ -49,6 +58,15 @@
   .page-footer__logo {
     display: block;
     margin-right: 183px;
+  }
+
+  .page-footer__logo:not(.page-footer__logo--current) a:hover {
+    fill: $secondary-color;
+  }
+
+  .page-footer__logo:not(.page-footer__logo--current) a:active {
+    fill: $secondary-color;
+    opacity: 0.3;
   }
 
   .page-footer__social-list {

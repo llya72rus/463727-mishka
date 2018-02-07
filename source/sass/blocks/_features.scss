@@ -15,14 +15,16 @@
 }
 
 .features__item {
+  position: relative;
   margin: 0;
   margin-bottom: 38px;
   font-size: 17px;
   line-height: 1.12;
   font-weight: 700;
 
-  &--flower {
-    padding-right: 80px;
+  &::before {
+    content: "";
+    position: absolute;
   }
 
   &--price {
@@ -33,35 +35,19 @@
     margin-bottom: 42px;
   }
 
-  &--price,
-  &--handmade,
-  &--delivery {
-    padding-right: 50px;
-  }
-
-  &--likes {
-    margin-bottom: 31px;
-    padding-right: 55px;
-  }
-
-  &--support {
-    margin-bottom: 32px;
-  }
-
   &:last-child {
     margin-bottom: 0;
   }
-
-  br {
-    display: none;
-  }
 }
 
-.features__img {
-  display: block;
-  margin-bottom: 20px;
-  padding-left: 8px;
-  fill: $secondary-color;
+.features__item--flower {
+  padding-right: 80px;
+
+  &::before {
+    width: 32px;
+    height: 37px;
+    background: url("#{$imgDir}/icon-feature-flower.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
