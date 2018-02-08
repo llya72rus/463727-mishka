@@ -149,6 +149,9 @@
                 <h3 class="main-form__title main-form__title--tel">Тел</h3>
                 <div class="main-form__fieldset-inner-wrapper">
                   <input class="main-form__input" type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+                  <svg class="main-form__img" width="24.829" height="24.333" aria-hidden="true" role="presentation">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </div>
               </div>
             </fieldset>
@@ -159,6 +162,9 @@
                 <h3 class="main-form__title main-form__title--email">E-mail</h3>
                 <div class="main-form__fieldset-inner-wrapper">
                   <input class="main-form__input" type="email" placeholder="Ваш Email*" required>
+                  <svg class="main-form__img" width="32" height="32" aria-hidden="true" role="presentation">
+                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                  </svg>
                 </div>
               </div>
             </fieldset>
@@ -182,52 +188,58 @@
     </section>
   </main>
   <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="logo page-footer__logo">
-          <a href="index.html">
-            <svg width="101.615" height="34.056" id="logo-footer">
-              <use xlink:href="img/sprite.svg#logo-footer"></use>
-            </svg>
-          </a>
-        </div>
-        <ul class="page-footer__social-list social">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Профиль компании "Мишка" в Инстаграмм</span>
-              <svg width="21.769" height="21.334">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Профиль компании "Мишка" в Фейсбук</span>
-              <svg width="14.962" height="27.718">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Профиль компании "Мишка" в Твиттер</span>
-              <svg width="23.494" height="20.168">
-                <use xlink:href="img/sprite.svg#icon-tw"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright">
-          <p class="page-footer__copyright-text">Разработано</p>
-          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <span class="visually-hidden">Ссылка на Интенсив "Профессиональный HTML и CSS, уровень 2"</span>
-            <svg class="page-footer__img-academy" width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-academy"></use>
-            </svg>
-          </a>
-        </div>
+    <div class="page-footer__wrapper">
+      <div class="logo page-footer__logo">
+        <a href="index.html">
+          <svg width="101.615" height="34.056" id="logo-footer" role="img">
+            <title>Логотип компании "Мишка"</title>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
       </div>
-    </footer>
+      <ul class="page-footer__social-list social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="21.769" height="21.334" role="img">
+              <title>Профиль компании "Мишка" в Инстаграмм</title>
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="14.962" height="27.718" role="img">
+              <title>Профиль компании "Мишка" в Фейсбук</title>
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="23.494" height="20.168" role="img">
+              <title>Профиль компании "Мишка" в Твиттер</title>
+              <use xlink:href="img/sprite.svg#icon-tw"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-text">Разработано</p>
+        <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <svg class="page-footer__img-academy" width="27" height="34" role="img">
+            <title>Ссылка на Интенсив "Профессиональный HTML и CSS, уровень 2"</title>
+            <use xlink:href="img/sprite.svg#icon-academy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/polyfill.js"></script>
+  <script>
+    svg4everybody();
+  </script>
   <script src="js/main.js"></script>
 </body>
 
 </html>
+

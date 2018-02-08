@@ -35,6 +35,10 @@
   border: none;
 }
 
+.main-form__fieldset-inner-wrapper {
+  position: relative;
+}
+
 .main-form__item {
   margin: 0;
   margin-bottom: 19px;
@@ -155,6 +159,14 @@
   display: block;
 }
 
+.main-form__label:hover::before {
+  border-color: $secondary-color;
+}
+
+.main-form__label:active::before {
+  border-color: #c7c7c7;
+}
+
 .main-form__label-name {
   display: block;
   margin-bottom: 14px;
@@ -171,9 +183,21 @@
   border-bottom: 2px solid $black;
   font: inherit;
 
+  &:hover {
+    border-bottom-color: $secondary-color;
+  }
+
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.main-form__input:focus::placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.main-form__input:hover + .main-form__img {
+  fill: $secondary-color;
 }
 
 .main-form__textarea {
@@ -194,6 +218,12 @@
   line-height: 1.2;
 }
 
+.main-form__img {
+  position: absolute;
+  top: -5px;
+  right: 7px;
+  fill: #cccccc;
+}
 
 .main-form__note {
   display: inline-block;

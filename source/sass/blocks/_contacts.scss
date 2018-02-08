@@ -40,12 +40,22 @@
 
 .contacts__desc {
   margin: 0;
-  box-shadow: 0 1px 0 0 $secondary-color;
+
+  &--email {
+    box-shadow: 0 1px 0 0 $secondary-color-dark;
+  }
 
   &--address {
     padding-right: 35px;
-    box-shadow: none;
   }
+}
+
+.contacts__desc--email:hover {
+  color: $secondary-color;
+}
+
+.contacts__desc--email:active {
+  opacity: 0.3;
 }
 
 .contacts__map {

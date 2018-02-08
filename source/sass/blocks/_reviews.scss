@@ -60,15 +60,23 @@
   border: 1px solid $grey-lighten;
 }
 
+.reviews__toggle:hover svg {
+  fill: rgba(102, 102, 102, 0.6);
+}
+
+.reviews__toggle:active svg {
+  fill: rgba(178, 178, 178, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 143px;
     background: url("#{$imgDir}/review@1x.jpg") no-repeat;
-    background-size: 45.6;
+    background-size: 45.6%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("#{$imgDir}/review@2x.jpg") no-repeat;
-      background-size: 45.6;
+      background-size: 45.6%;
     }
   }
 

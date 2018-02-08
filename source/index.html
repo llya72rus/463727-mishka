@@ -32,7 +32,7 @@
         </li>
         <li class="main-nav__item main-nav__item--search">
           <a class="main-nav__link main-nav__link--search" href="#">
-            <svg class="main-nav__img" width="17.6" height="17.6">
+            <svg class="main-nav__img" width="17.6" height="17.6" aria-hidden="true" role="presentation">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
             Поиск по сайту
@@ -40,7 +40,7 @@
         </li>
         <li class="main-nav__item main-nav__item--cart">
           <a class="main-nav__link" href="#">
-            <svg class="main-nav__img main-nav__img--cart" width="20.294" height="18.849">
+            <svg class="main-nav__img main-nav__img--cart" width="20.294" height="18.849" aria-hidden="true" role="presentation">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>
             Корзина: пока пуста
@@ -143,19 +143,15 @@
         </div>
         <div class="reviews__toggles">
           <button class="reviews__toggle reviews__toggle--prev" type="button">
-            <span class="visually-hidden">Следующий отзыв</span>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"
-              height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-              <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "
-              />
+            <span class="visually-hidden">Предыдущий отзыв</span>
+            <svg width="50" height="26" aria-hidden="true" role="presentation">
+              <use xlink:href="img/sprite.svg#arrow-prev"></use>
             </svg>
           </button>
           <button class="reviews__toggle reviews__toggle--next" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px"
-              height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-              <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "
-              />
+            <svg width="50" height="26" aria-hidden="true" role="presentation">
+              <use xlink:href="img/sprite.svg#arrow-next"></use>
             </svg>
           </button>
         </div>
@@ -168,7 +164,7 @@
         <dl class="contacts__desc-list">
           <div class="contacts__string-wrapper contacts__string-wrapper--email">
             <dt class="contacts__termin">e-mail:</dt>
-            <dd class="contacts__desc">
+            <dd class="contacts__desc contacts__desc--email">
               <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </dd>
           </div>
@@ -179,19 +175,7 @@
           </div>
         </dl>
       </div>
-<<<<<<< HEAD
-      <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp">
-          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-          <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании &laquo;Мишка&raquo;">
-        </picture>
-      <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Офис компании &laquo;Мишка&raquo;">
-=======
       <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании &laquo;Мишка&raquo;">
->>>>>>> 046598fa03a3d9aeecd2d9347f34d859d9e93cdd
       <a href="#" class="button contacts__write-us-link">Напишите нам</a>
     </section>
   </main>
@@ -199,7 +183,8 @@
     <div class="page-footer__wrapper">
       <div class="logo page-footer__logo page-footer__logo--current">
         <a>
-          <svg width="101.615" height="34.056" id="logo-footer">
+          <svg width="101.615" height="34.056" id="logo-footer" role="img">
+            <title>Логотип компании "Мишка"</title>
             <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
@@ -207,24 +192,24 @@
       <ul class="page-footer__social-list social">
         <li class="social__item">
           <a class="social__link" href="#">
-            <span class="visually-hidden">Профиль компании "Мишка" в Инстаграмм</span>
-            <svg width="21.769" height="21.334">
+            <svg width="21.769" height="21.334" role="img">
+              <title>Профиль компании "Мишка" в Инстаграмм</title>
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <span class="visually-hidden">Профиль компании "Мишка" в Фейсбук</span>
-            <svg width="14.962" height="27.718">
+            <svg width="14.962" height="27.718" role="img">
+              <title>Профиль компании "Мишка" в Фейсбук</title>
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <span class="visually-hidden">Профиль компании "Мишка" в Твиттер</span>
-            <svg width="23.494" height="20.168">
+            <svg width="23.494" height="20.168" role="img">
+              <title>Профиль компании "Мишка" в Твиттер</title>
               <use xlink:href="img/sprite.svg#icon-tw"></use>
             </svg>
           </a>
@@ -233,8 +218,8 @@
       <div class="page-footer__copyright">
         <p class="page-footer__copyright-text">Разработано</p>
         <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-          <span class="visually-hidden">Ссылка на Интенсив "Профессиональный HTML и CSS, уровень 2"</span>
-          <svg class="page-footer__img-academy" width="27" height="34">
+          <svg class="page-footer__img-academy" width="27" height="34" role="img">
+            <title>Ссылка на Интенсив "Профессиональный HTML и CSS, уровень 2"</title>
             <use xlink:href="img/sprite.svg#icon-academy"></use>
           </svg>
         </a>
@@ -262,6 +247,8 @@
       <button class="sizes__add" type="submit">Добавить</button>
     </form>
   </div>
+  <script src="js/polyfill.js"></script>
+  <script>svg4everybody(); </script>
   <script src="js/main.js"></script>
 </body>
 
