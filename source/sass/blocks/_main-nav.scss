@@ -36,6 +36,15 @@
   }
 }
 
+.main-nav__link:hover svg {
+  fill: $secondary-color;
+}
+
+.main-nav__link:active svg {
+  fill: $secondary-color;
+  opacity: 0.3;
+}
+
 .main-nav__img {
   position: absolute;
   top: 35px;
@@ -200,6 +209,7 @@
 
     &--search {
       width: 84px;
+      padding-top: 36px;
       font-size: 0;
       text-align: center;
       border-left: 1px solid $grey-lighten;
@@ -285,6 +295,10 @@
       margin-top: 0;
       padding: 31px 0 36px;
       font-size: 17px;
+    }
+
+    &--search {
+      padding-top: 36px;
     }
 
     &--desktop-show {

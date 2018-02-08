@@ -1,7 +1,16 @@
 .social {
-  width: 53%;
+  width: 54%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.social__link:hover {
+  fill: $secondary-color;
+}
+
+.social__link:active {
+  fill: $secondary-color;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

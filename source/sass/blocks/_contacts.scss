@@ -41,9 +41,21 @@
 .contacts__desc {
   margin: 0;
 
+  &--email {
+    box-shadow: 0 1px 0 0 $secondary-color-dark;
+  }
+
   &--address {
     padding-right: 35px;
   }
+}
+
+.contacts__desc--email:hover {
+  color: $secondary-color;
+}
+
+.contacts__desc--email:active {
+  opacity: 0.3;
 }
 
 .contacts__map {

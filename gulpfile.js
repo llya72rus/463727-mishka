@@ -6,6 +6,13 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var webp = require('gulp-webp');
+
+gulp.task('webp', () =>
+    gulp.src('source/img/*.jpg')
+        .pipe(webp())
+        .pipe(gulp.dest('webp-images'))
+);
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
