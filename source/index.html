@@ -145,13 +145,13 @@
           <button class="reviews__toggle reviews__toggle--prev" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
             <svg width="50" height="26" aria-hidden="true" role="presentation">
-              <use xlink:href="img/sprite.svg#arrow-prev"></use>
+              <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
             </svg>
           </button>
           <button class="reviews__toggle reviews__toggle--next" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
             <svg width="50" height="26" aria-hidden="true" role="presentation">
-              <use xlink:href="img/sprite.svg#arrow-next"></use>
+              <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
             </svg>
           </button>
         </div>
@@ -175,7 +175,9 @@
           </div>
         </dl>
       </div>
-      <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании &laquo;Мишка&raquo;">
+      <div id="google-map" class="contacts__map">
+        <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис компании &laquo;Мишка&raquo;">
+      </div>
       <a href="#" class="button contacts__write-us-link">Напишите нам</a>
     </section>
   </main>
@@ -250,6 +252,7 @@
   <script src="js/polyfill.js"></script>
   <script>svg4everybody(); </script>
   <script src="js/main.js"></script>
+  <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyCX09RrIcwRRmhs8JXVJuhDeLNmWxlTvYc&callback=initMap"></script>
 </body>
 
 </html>

@@ -13,7 +13,7 @@
 .page-footer__social-list {
   @include flex();
   @include reset-list();
-  margin-bottom: 27px;
+  margin-bottom: 23px;
 }
 
 .page-footer__link-academy {
@@ -90,6 +90,6 @@
   }
 
   .page-footer__logo {
-    margin-right: 367px;
+    margin-right: 348px;
   }
 }

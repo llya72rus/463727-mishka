@@ -143,6 +143,7 @@
   .reviews {
     width: 1050px;
     margin: 0 auto 160px;
+    background-size: 33.5%;
   }
 
   .reviews__wrapper {
@@ -151,7 +152,7 @@
     padding: 72px 0 97px 175px;
 
     &::after {
-      bottom: -74px;
+      bottom: -89px;
       height: 24px;
       background-size: auto 24px;
     }
@@ -169,6 +170,7 @@
   .reviews__write-link {
     width: auto;
     margin-top: 9px;
+    padding: 14px 38px;
   }
 
 

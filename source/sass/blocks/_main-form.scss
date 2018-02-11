@@ -223,6 +223,10 @@
   top: -5px;
   right: 7px;
   fill: #cccccc;
+
+  &:hover {
+    fill: $secondary-color;
+  }
 }
 
 .main-form__note {
@@ -374,6 +378,15 @@
     }
   }
 
+  .main-form__img {
+    top: -2px;
+    right: 27px;
+
+    &--email {
+      right: 22px;
+    }
+  }
+
   .main-form__item--name:last-of-type {
     margin-bottom: 0;
   }
@@ -507,7 +520,7 @@
 
   .main-form__fieldset-wrapper {
     width: 875px;
-    padding-left: 64px;
+    padding-left: 62px;
 
     &--color {
       width: 964px;
@@ -518,6 +531,23 @@
   .main-form__item--color:nth-of-type(even),
   .main-form__item--color:nth-of-type(odd) {
     width: 33.33%;
+  }
+
+  .main-form__title {
+    padding-top: 5px;
+
+    &--type,
+    &--tel {
+      padding-top: 3px;
+    }
+
+    &--color {
+      padding-top: 2px;
+    }
+
+    &--extra {
+      padding-top: 15px;
+    }
   }
 
   .main-form__item--black {

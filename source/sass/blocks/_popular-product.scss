@@ -1,6 +1,6 @@
 .popular-product {
   position: relative;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   &::after {
     @include zigzag-line();
@@ -16,10 +16,6 @@
   padding-bottom: 30px;
   padding-left: 9.3%;
   padding-right: 9.3%;
-
-  &--mb {
-    margin-bottom: 77px;
-  }
 }
 
 .popular-product__bottom-wrapper {
@@ -54,7 +50,7 @@
   margin: 0;
   margin-bottom: 17px;
   color: $primary-color;
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1.6;
 }
 
@@ -67,6 +63,10 @@
 .popular-product__cell {
   padding: 10px 0;
   border-bottom: 2px solid $grey-lighten;
+
+  &--title {
+    width: 38%;
+  }
 }
 
 .popular-product__img {
@@ -77,7 +77,7 @@
 
 .popular-product__price {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   color: $primary-color;
   font-size: 17px;
   line-height: 1.7;
@@ -134,6 +134,10 @@
     margin-bottom: 41px;
   }
 
+  .popular-product__cell--title {
+    width: auto;
+  }
+
   .popular-product__img {
     width: 43%;
     position: absolute;
@@ -169,7 +173,7 @@
 
     &::after {
       @include zigzag-line();
-      bottom: -70px;
+      bottom: -93px;
       height: 24px;
       background-size: auto 24px;
     }
@@ -184,11 +188,15 @@
     flex-direction: row-reverse;
     margin-bottom: 49px;
     padding-right: 0;
-    padding-left: 49px;
+    padding-left: 45px;
   }
 
   .popular-product__middle-wrapper {
     justify-content: flex-start;
+  }
+
+  .popular-product__label {
+    padding-top: 6px;
   }
 
   .popular-product__text {
@@ -198,7 +206,7 @@
   }
 
   .popular-product__desc {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .popular-product__price-wrapper {
