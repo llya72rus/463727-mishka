@@ -81,7 +81,9 @@
   }
 
   .promo__wrapper {
-    @include ie-only();
+    @include ie-only() {
+      height: 693px;
+    }
     min-height: 693px;
     border-top: none;
   }

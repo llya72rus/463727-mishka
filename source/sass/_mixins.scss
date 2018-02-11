@@ -31,6 +31,6 @@
 
 @mixin ie-only() {
   @media all and (-ms-high-contrast: none) {
-    height: 693px;
+    @content;
   }
 }

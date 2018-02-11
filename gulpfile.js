@@ -45,22 +45,14 @@ gulp.task("webp", function() {
 });
 
 gulp.task("sprite", function() {
-    gulp.src([
-      "source/img/icon-academy.svg",
-      "source/img/logo-footer.svg",
-      "source/img/icon-cart.svg",
-      "source/img/icon-search.svg",
-      "source/img/icon-fb.svg",
-      "source/img/icon-insta.svg",
-      "source/img/icon-tw.svg",
-      "source/img/icon-phone.svg",
-      "source/img/icon-mail.svg",
-      "source/img/icon-left-arrow.svg",
-      "source/img/icon-right-arrow.svg"
-    ])
+    gulp.src("source/img/sprite-svg/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
+});
+
+gulp.task("clean", function() {
+  del("build");
 });
 
 gulp.task("copy", function() {
@@ -73,10 +65,6 @@ gulp.task("copy", function() {
     base: "source"
   })
   .pipe(gulp.dest("build"));
-});
-
-gulp.task("clean", function() {
-  del("build");
 });
 
 gulp.task("serve",  function() {
