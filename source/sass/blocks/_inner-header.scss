@@ -1,5 +1,5 @@
 .inner-header {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   &--knitting {
     margin-bottom: 25px;
@@ -7,8 +7,8 @@
 }
 
 .inner-header__wrapper {
-  padding: 71px 9.3% 75px;
-  background-color: $grey-darken;
+  padding: 73px 9.3% 75px;
+  background-color: $grey-dark;
   text-align: center;
 }
 
@@ -37,15 +37,15 @@
     &::before {
       bottom: 94%;
       height: 91px;
-      background-color: $grey-darken;
+      background-color: $grey-dark;
       border-top: 1px solid #dfdfdf;
       z-index: -1;
     }
 
     &::after {
-      bottom: -20px;
+      bottom: -22px;
       height: 34px;
-      background: url("#{$imgDir}/zigzag-fill-desktop.svg") repeat center;
+      background: url("#{$imgDir}/bg-zigzag-fill.svg") repeat center;
     }
   }
 

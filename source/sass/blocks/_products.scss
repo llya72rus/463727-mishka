@@ -52,6 +52,10 @@
   background: url("#{$imgDir}/icon-toy.svg") no-repeat 50%;
 }
 
+.products__link:active::after {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .products {
     @include flex;

@@ -28,3 +28,9 @@
   width: 100%;
   background: url("#{$imgDir}/bg-zigzag-line.svg") repeat-x;
 }
+
+@mixin ie-only() {
+  @media all and (-ms-high-contrast: none) {
+    height: 693px;
+  }
+}

@@ -60,6 +60,7 @@
 
 .contacts__map {
   width: 100%;
+  height: 457px;
   margin-bottom: 36px;
 }
 
@@ -74,7 +75,18 @@
   }
 
   .contacts__text-wrapper {
+    position: relative;
     padding: 0 6.5%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -16px;
+      right: 6.5%;
+      width: 47px;
+      height: 81px;
+      background: url("#{$imgDir}/flag.png");
+    }
   }
 
   .contacts__title {
@@ -118,7 +130,7 @@
 
   .contacts__map {
     height: 457px;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
   }
 }
 
@@ -136,6 +148,12 @@
     padding: 0;
     padding-top: 71px;
     padding-left: 171px;
+
+    &::before {
+      top: 64px;
+      left: 62px;
+      right: auto;
+    }
   }
 
   .contacts__desc-list {

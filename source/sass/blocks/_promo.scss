@@ -40,11 +40,11 @@
   .promo {
     position: relative;
     margin-bottom: 41px;
-    background: $grey-darken url("#{$imgDir}/hero-tablet@1x.jpg") no-repeat 50% -50px;
+    background: $grey-darken url("#{$imgDir}/hero-tablet@1x.jpg") no-repeat 50% -57px;
     background-size: 1150px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: $grey-darken url("#{$imgDir}/hero-tablet@2x.jpg") no-repeat 50% -50px;
+      background: $grey-darken url("#{$imgDir}/hero-tablet@2x.jpg") no-repeat 50% -57px;
       background-size: 1150px auto;
     }
 
@@ -81,6 +81,7 @@
   }
 
   .promo__wrapper {
+    @include ie-only();
     min-height: 693px;
     border-top: none;
   }
@@ -94,7 +95,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    margin-bottom: 76px;
+    margin-bottom: 69px;
     background: $grey-darken url("#{$imgDir}/hero-desktop@1x.jpg") no-repeat 50% -50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -105,7 +106,7 @@
 
   .promo__wrapper {
     width: 1050px;
-    min-height: 692px;
+    min-height: 693px;
     margin: 0 auto;
   }
 
@@ -120,6 +121,6 @@
   }
 
   .promo::before {
-    bottom: 99.2%;
+    bottom: 99%;
   }
 }

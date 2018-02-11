@@ -44,9 +44,14 @@
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
 }
 
-.sizes__radio:checked + .sizes__btn {
+.sizes__radio:checked + .sizes__btn,
+.sizes__btn:active {
   border-color: $secondary-color;
 }
 
@@ -67,7 +72,7 @@
     width: 566px;
     padding: 46px 108px;
     border: 1px solid #c6c7c6;
-    box-shadow: 0 0 10px 10px #c6c7c6;
+    box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   }
 
   .sizes__title {
