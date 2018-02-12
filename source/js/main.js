@@ -46,13 +46,13 @@
 
 // This function has to be in global scope in order to initialize map from HTML
 function initMap() {
-  var academy = {lat: 59.9387048, lng: 30.3223588},
+  var academy = {lat: 59.9383136, lng: 30.3228642},
       mapNode = document.getElementById('google-map');
 
   if (mapNode) {
     var map = new google.maps.Map(mapNode, {
       zoom: 16,
-      center: {lat: 59.9387048, lng: 30.9387048},
+      center: {lat: 59.9387942, lng: 30.3230833},
       scrollwheel: false
     });
 
