@@ -1,1 +1,71 @@
-function initMap(){var e={lat:59.9383136,lng:30.3231642},t=document.getElementById("google-map");if(t){var n=new google.maps.Map(t,{zoom:16,center:{lat:59.9387942,lng:30.3230833},scrollwheel:!1});new google.maps.Marker({position:e,map:n,icon:"img/map-pin.png"})}}!function(){"use strict";var e=document.querySelector(".main-nav"),t=document.querySelector(".main-nav__toggle");e&&t&&(e.classList.remove("main-nav--nojs"),t.addEventListener("click",function(){e.classList.contains("main-nav--closed")?(e.classList.remove("main-nav--closed"),e.classList.add("main-nav--opened")):(e.classList.remove("main-nav--opened"),e.classList.add("main-nav--closed"))}));var n=document.querySelector(".modal"),a=document.querySelector(".popular-product__order"),o=document.querySelector(".sizes__add");n&&a&&o&&(a.addEventListener("click",function(e){e.preventDefault(),n.classList.add("modal--show")}),o.addEventListener("click",function(e){e.preventDefault(),n.classList.remove("modal--show")})),window.addEventListener("keydown",function(e){27===e.keyCode&&n.classList.contains("modal--show")&&n.classList.remove("modal--show")}),window.addEventListener("click",function(e){e.target===n&&n.classList.remove("modal--show")})}(),function(e,t){"function"==typeof define&&define.amd?define([],function(){return e.svg4everybody=t()}):"object"==typeof module&&module.exports?module.exports=t():e.svg4everybody=t()}(this,function(){function e(e,t,n){if(n){var a=document.createDocumentFragment(),o=!t.hasAttribute("viewBox")&&n.getAttribute("viewBox");o&&t.setAttribute("viewBox",o);for(var i=n.cloneNode(!0);i.childNodes.length;)a.appendChild(i.firstChild);e.appendChild(a)}}function t(t){t.onreadystatechange=function(){if(4===t.readyState){var n=t._cachedDocument;n||(n=t._cachedDocument=document.implementation.createHTMLDocument(""),n.body.innerHTML=t.responseText,t._cachedTarget={}),t._embeds.splice(0).map(function(a){var o=t._cachedTarget[a.id];o||(o=t._cachedTarget[a.id]=n.getElementById(a.id)),e(a.parent,a.svg,o)})}},t.onreadystatechange()}function n(n){function o(){for(var n=0;n<v.length;){var d=v[n],s=d.parentNode,c=a(s),l=d.getAttribute("xlink:href")||d.getAttribute("href");if(!l&&r.attributeName&&(l=d.getAttribute(r.attributeName)),c&&l){if(i)if(!r.validate||r.validate(l,c,d)){s.removeChild(d);var u=l.split("#"),p=u.shift(),h=u.join("#");if(p.length){var b=m[p];b||(b=m[p]=new XMLHttpRequest,b.open("GET",p),b.send(),b._embeds=[]),b._embeds.push({parent:s,svg:c,id:h}),t(b)}else e(s,c,document.getElementById(h))}else++n,++f}else++n}(!v.length||v.length-f>0)&&g(o,67)}var i,r=Object(n),d=/\bTrident\/[567]\b|\bMSIE (?:9|10)\.0\b/,s=/\bAppleWebKit\/(\d+)\b/,c=/\bEdge\/12\.(\d+)\b/,l=/\bEdge\/.(\d+)\b/,u=window.top!==window.self;i="polyfill"in r?r.polyfill:d.test(navigator.userAgent)||(navigator.userAgent.match(c)||[])[1]<10547||(navigator.userAgent.match(s)||[])[1]<537||l.test(navigator.userAgent)&&u;var m={},g=window.requestAnimationFrame||setTimeout,v=document.getElementsByTagName("use"),f=0;i&&o()}function a(e){for(var t=e;"svg"!==t.nodeName.toLowerCase()&&(t=t.parentNode););return t}return n}),function(e,t){"function"==typeof define&&define.amd?define([],function(){return e.svg4everybody=t()}):"object"==typeof module&&module.exports?module.exports=t():e.svg4everybody=t()}(this,function(){function e(e,t,n){if(n){var a=document.createDocumentFragment(),o=!t.hasAttribute("viewBox")&&n.getAttribute("viewBox");o&&t.setAttribute("viewBox",o);for(var i=n.cloneNode(!0);i.childNodes.length;)a.appendChild(i.firstChild);e.appendChild(a)}}function t(t){t.onreadystatechange=function(){if(4===t.readyState){var n=t._cachedDocument;n||(n=t._cachedDocument=document.implementation.createHTMLDocument(""),n.body.innerHTML=t.responseText,t._cachedTarget={}),t._embeds.splice(0).map(function(a){var o=t._cachedTarget[a.id];o||(o=t._cachedTarget[a.id]=n.getElementById(a.id)),e(a.parent,a.svg,o)})}},t.onreadystatechange()}function n(n){function o(){for(var n=0;n<v.length;){var d=v[n],s=d.parentNode,c=a(s),l=d.getAttribute("xlink:href")||d.getAttribute("href");if(!l&&r.attributeName&&(l=d.getAttribute(r.attributeName)),c&&l){if(i)if(!r.validate||r.validate(l,c,d)){s.removeChild(d);var u=l.split("#"),p=u.shift(),h=u.join("#");if(p.length){var b=m[p];b||(b=m[p]=new XMLHttpRequest,b.open("GET",p),b.send(),b._embeds=[]),b._embeds.push({parent:s,svg:c,id:h}),t(b)}else e(s,c,document.getElementById(h))}else++n,++f}else++n}(!v.length||v.length-f>0)&&g(o,67)}var i,r=Object(n),d=/\bTrident\/[567]\b|\bMSIE (?:9|10)\.0\b/,s=/\bAppleWebKit\/(\d+)\b/,c=/\bEdge\/12\.(\d+)\b/,l=/\bEdge\/.(\d+)\b/,u=window.top!==window.self;i="polyfill"in r?r.polyfill:d.test(navigator.userAgent)||(navigator.userAgent.match(c)||[])[1]<10547||(navigator.userAgent.match(s)||[])[1]<537||l.test(navigator.userAgent)&&u;var m={},g=window.requestAnimationFrame||setTimeout,v=document.getElementsByTagName("use"),f=0;i&&o()}function a(e){for(var t=e;"svg"!==t.nodeName.toLowerCase()&&(t=t.parentNode););return t}return n});
+(function() {
+  'use strict';
+
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  if (navMain && navToggle) {
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.remove('main-nav--opened');
+        navMain.classList.add('main-nav--closed');
+      }
+    });
+  }
+
+  var modal = document.querySelector('.modal');
+  var orderBtn = document.querySelector('.popular-product__order');
+  var addToCart = document.querySelector('.sizes__add');
+
+  if (modal && orderBtn && addToCart) {
+    orderBtn.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modal.classList.add('modal--show');
+    });
+
+    addToCart.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      modal.classList.remove('modal--show');
+    });
+  }
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
+      if (modal.classList.contains('modal--show')) {
+        modal.classList.remove('modal--show');
+      }
+    }
+  });
+
+  window.addEventListener('click', function (evt) {
+    if (evt.target === modal) {
+      modal.classList.remove('modal--show');
+    }
+  });
+})();
+
+
+// This function has to be in global scope in order to initialize map from HTML
+function initMap() {
+  var academy = {lat: 59.9383136, lng: 30.3231642},
+      mapNode = document.getElementById('google-map');
+
+  if (mapNode) {
+    var map = new google.maps.Map(mapNode, {
+      zoom: 16,
+      center: {lat: 59.9387942, lng: 30.3230833},
+      scrollwheel: false
+    });
+
+    var marker = new google.maps.Marker({
+      position: academy,
+      map: map,
+      icon: 'img/map-pin.png'
+    });
+  }
+}
