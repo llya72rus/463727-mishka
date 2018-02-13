@@ -528,6 +528,14 @@
     }
   }
 
+  .main-form__img {
+    right: 8px;
+
+    &--email {
+      right: 5px;
+    }
+  }
+
   .main-form__item--color:nth-of-type(even),
   .main-form__item--color:nth-of-type(odd) {
     width: 33.33%;

@@ -41,25 +41,31 @@
       }
     }
   });
+
+  window.addEventListener('click', function (evt) {
+    if (evt.target === modal) {
+      modal.classList.remove('modal--show');
+    }
+  });
 })();
 
 
 // This function has to be in global scope in order to initialize map from HTML
 function initMap() {
-  var academy = {lat: 59.9387048, lng: 30.3223588},
+  var academy = {lat: 59.9383136, lng: 30.3231642},
       mapNode = document.getElementById('google-map');
 
   if (mapNode) {
     var map = new google.maps.Map(mapNode, {
       zoom: 16,
-      center: {lat: 59.9387048, lng: 30.9387048},
+      center: {lat: 59.9387942, lng: 30.3230833},
       scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
       position: academy,
       map: map,
-      icon: 'img/map-pin.svg'
+      icon: 'img/map-pin.png'
     });
   }
 }

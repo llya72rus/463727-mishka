@@ -11,6 +11,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("#{$imgDir}/hero-mobile@2x.jpg") no-repeat 50% -10px;
+    background-size: 575px auto;
   }
 }
 
@@ -97,7 +98,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    margin-bottom: 69px;
+    margin-bottom: 65px;
     background: $grey-darken url("#{$imgDir}/hero-desktop@1x.jpg") no-repeat 50% -50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -107,8 +108,11 @@
   }
 
   .promo__wrapper {
+    @include ie-only() {
+      height: 697px;
+    }
     width: 1050px;
-    min-height: 693px;
+    min-height: 697px;
     margin: 0 auto;
   }
 
