@@ -3,6 +3,24 @@
   padding: 22px 0 17px;
 }
 
+.main-nav__logo {
+  @include flex($just-cont: center);
+  width: 100%;
+
+  &:not(.main-nav__logo--current):hover {
+    opacity: 0.6;
+  }
+
+  &:not(.main-nav__logo--current):active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__tablet-logo,
+.main-nav__desktop-logo {
+  display: none;
+}
+
 .main-nav__list {
   @include reset-list();
 }
@@ -150,6 +168,22 @@
     padding: 0 6.5%;
   }
 
+  .main-nav__logo {
+    position: absolute;
+    top: 20px;
+    left: 6.5%;
+    width: 112px;
+    height: 46px;
+  }
+
+  .main-nav__mobile-logo {
+    display: none;
+  }
+
+  .main-nav__tablet-logo {
+    display: inline;
+  }
+
   .main-nav__list {
     @include flex(flex-start);
   }
@@ -231,6 +265,23 @@
     width: 1050px;
     margin: 0 auto;
     padding: 0;
+  }
+
+  .main-nav__logo {
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 149px;
+    height: 72px;
+    margin: auto;
+  }
+
+  .main-nav__tablet-logo {
+    display: none;
+  }
+
+  .main-nav__desktop-logo {
+    display: inline;
   }
 
   .main-nav__item {

@@ -48,7 +48,7 @@ gulp.task("sprite", function() {
     gulp.src("source/img/sprite-svg/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 });
 
 gulp.task("clean", function() {
