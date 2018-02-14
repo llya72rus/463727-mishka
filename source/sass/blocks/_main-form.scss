@@ -61,6 +61,7 @@
 }
 
 .main-form__title {
+  display: block;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
@@ -226,6 +227,10 @@
 
   &:hover {
     fill: $secondary-color;
+  }
+
+  &--email {
+    right: 5px;
   }
 }
 
