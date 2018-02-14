@@ -176,7 +176,7 @@
   .main-nav__logo {
     width: 112px;
     height: 46px;
-    padding-top: 46px;
+    margin-top: 23px;
   }
 
   .main-nav__mobile-logo {
@@ -206,13 +206,8 @@
   .main-nav__item {
     border-top: none;
 
-    // &--search {
-    //   margin-left: 48%;
-    // }
-
     &--cart {
       flex-grow: 1;
-      // flex-basis: 33%;
       text-align: right;
     }
 
@@ -285,7 +280,7 @@
   .main-nav__logo {
     width: 149px;
     height: 72px;
-    padding-top: 20px;
+    margin-top: 10px;
     order: 1;
   }
 
