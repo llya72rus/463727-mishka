@@ -62,7 +62,7 @@ gulp.task("uglify", function() {
   gulp.src("source/js/main.js")
     .pipe(uglify())
     .pipe(rename("main.min.js"))
-    .pipe(gulp.dest("source/js"))
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("clean", function() {
@@ -100,6 +100,7 @@ gulp.task("build", function(done) {
     "copy",
     "style",
     "sprite",
+    "uglify",
     done
   );
 });
