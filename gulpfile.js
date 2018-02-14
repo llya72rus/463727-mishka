@@ -81,7 +81,7 @@ gulp.task("copy", function() {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("serve",  function() {
+gulp.task("serve", function() {
   server.init({
     server: "build/",
     notify: false,

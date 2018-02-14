@@ -53,19 +53,21 @@
 }
 
 .product__cart {
-  font-size: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.product__cart:hover .product__cart-img {
+  fill: rgb(99, 209, 187);
+}
+
+.product__cart:active .product__cart-img {
+  fill: rgba(99, 209, 187, 0.3);
 }
 
 .product__cart-img {
   fill: #d3d2d2;
-
-  &:hover {
-    fill: rgb(99, 209, 187);
-  }
-
-  &:active {
-    fill: rgba(99, 209, 187, 0.3);
-  }
 }
 
 @media (min-width: $tablet-width) {

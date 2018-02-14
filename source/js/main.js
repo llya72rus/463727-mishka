@@ -20,17 +20,19 @@
 
   var modal = document.querySelector('.modal');
   var orderBtn = document.querySelector('.popular-product__order');
-  var addToCart = document.querySelector('.sizes__add');
+  var addToCart = document.querySelector('.product__cart');
 
-  if (modal && orderBtn && addToCart) {
+  if (modal && orderBtn) {
     orderBtn.addEventListener('click', function(evt) {
       evt.preventDefault();
       modal.classList.add('modal--show');
     });
+  }
 
+  if (modal && addToCart) {
     addToCart.addEventListener('click', function(evt) {
       evt.preventDefault();
-      modal.classList.remove('modal--show');
+      modal.classList.add('modal--show');
     });
   }
 

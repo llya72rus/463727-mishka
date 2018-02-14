@@ -93,12 +93,12 @@
               <p class="product__desc">Рост 30 см, вес 200 г</p>
               <div class="product__price-and-cart-wrapper">
                 <b class="product__price">1&thinsp;200 руб.</b>
-                <a class="product__cart" href="#">
+                <button class="product__cart" type="button">
                   <svg class="product__cart-img" width="20.294" height="18.849">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
-                  Добавить товар в корзину
-                </a>
+                  <span class="visually-hidden">Добавить товар в корзину</span>
+                </button>
               </div>
             </div>
           </article>
@@ -122,12 +122,12 @@
               <p class="product__desc">Диаметр 15 см, высота 10 см</p>
               <div class="product__price-and-cart-wrapper">
                 <b class="product__price">690 руб.</b>
-                <a class="product__cart" href="#">
+                <button class="product__cart" type="button">
                   <svg class="product__cart-img" width="20.294" height="18.849">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
-                  Добавить товар в корзину
-                </a>
+                  <span class="visually-hidden">Добавить товар в корзину</span>
+                </button>
               </div>
             </div>
           </article>
@@ -151,12 +151,12 @@
               <p class="product__desc">Диаметр 30 см, высота 30 см</p>
               <div class="product__price-and-cart-wrapper">
                 <b class="product__price">1&thinsp;500 руб.</b>
-                <a class="product__cart" href="#">
+                <button class="product__cart" type="button">
                   <svg class="product__cart-img" width="20.294" height="18.849">
                     <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
-                  Добавить товар в корзину
-                </a>
+                  <span class="visually-hidden">Добавить товар в корзину</span>
+                </button>
               </div>
             </div>
           </article>
@@ -188,57 +188,78 @@
     </section>
   </main>
   <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="logo page-footer__logo">
-          <a href="index.html">
-            <svg width="101.615" height="34.056" id="logo-footer" role="img">
-              <title>Логотип компании "Мишка"</title>
-              <use xlink:href="img/sprite.svg#logo-footer"></use>
-            </svg>
-          </a>
-        </div>
-        <ul class="page-footer__social-list social">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="21.769" height="21.334" role="img">
-                <title>Профиль компании "Мишка" в Инстаграмм</title>
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="14.962" height="27.718" role="img">
-                <title>Профиль компании "Мишка" в Фейсбук</title>
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="23.494" height="20.168" role="img">
-                <title>Профиль компании "Мишка" в Твиттер</title>
-                <use xlink:href="img/sprite.svg#icon-tw"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright">
-          <p class="page-footer__copyright-text">Разработано</p>
-          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-            <svg class="page-footer__img-academy" width="27" height="34" role="img">
-              <title>Ссылка на Интенсив "Профессиональный HTML и CSS, уровень 2"</title>
-              <use xlink:href="img/sprite.svg#icon-academy"></use>
-            </svg>
-          </a>
-        </div>
+    <div class="page-footer__wrapper">
+      <div class="logo page-footer__logo">
+        <a href="index.html">
+          <svg width="101.615" height="34.056" id="logo-footer" role="img">
+            <title>Логотип компании "Мишка"</title>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
       </div>
-    </footer>
+      <ul class="page-footer__social-list social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="21.769" height="21.334" role="img">
+              <title>Профиль компании "Мишка" в Инстаграмм</title>
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="14.962" height="27.718" role="img">
+              <title>Профиль компании "Мишка" в Фейсбук</title>
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg width="23.494" height="20.168" role="img">
+              <title>Профиль компании "Мишка" в Твиттер</title>
+              <use xlink:href="img/sprite.svg#icon-tw"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-text">Разработано</p>
+        <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <svg class="page-footer__img-academy" width="27" height="34" role="img">
+            <title>Ссылка на Интенсив "Профессиональный HTML и CSS, уровень 2"</title>
+            <use xlink:href="img/sprite.svg#icon-academy"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal">
+    <form class="sizes" action="https://echo.htmlacademy.ru" method="get" name="sizes">
+      <h3 class="sizes__title">Добавить в корзину</h3>
+      <b class="sizes__info">Выберите размер:</b>
+      <ul class="sizes__list">
+        <li class="sizes__item">
+          <input class="visually-hidden sizes__radio" name="sizes" value="size-s" id="size-s" type="radio" checked>
+          <label class="sizes__btn" for="size-s">S</label>
+        </li>
+        <li class="sizes__item">
+          <input class="visually-hidden sizes__radio" name="sizes" value="size-m" id="size-m" type="radio">
+          <label class="sizes__btn" for="size-m">M</label>
+        </li>
+        <li class="sizes__item">
+          <input class="visually-hidden sizes__radio" name="sizes" value="size-m" id="size-l" type="radio">
+          <label class="sizes__btn" for="size-l">L</label>
+        </li>
+      </ul>
+      <button class="sizes__add" type="submit">Добавить</button>
+    </form>
+  </div>
   <script src="js/polyfill.js"></script>
   <script>
     svg4everybody();
   </script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

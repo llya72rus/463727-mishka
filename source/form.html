@@ -155,9 +155,9 @@
           <div class="main-form__wrapper main-form__wrapper--tel">
             <fieldset class="main-form__fieldset">
               <div class=" main-form__fieldset-wrapper">
-                <h3 class="main-form__title main-form__title--tel">Тел</h3>
+                <label class="main-form__title main-form__title--tel" for="tel">Тел</label>
                 <div class="main-form__fieldset-inner-wrapper">
-                  <input class="main-form__input" type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+                  <input class="main-form__input" type="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
                   <svg class="main-form__img" width="24.829" height="24.333" aria-hidden="true" role="presentation">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
@@ -168,9 +168,9 @@
           <div class="main-form__wrapper main-form__wrapper--email">
             <fieldset class="main-form__fieldset">
               <div class="main-form__fieldset-wrapper">
-                <h3 class="main-form__title main-form__title--email">E-mail</h3>
+                <label class="main-form__title main-form__title--email" for="email">E-mail</label>
                 <div class="main-form__fieldset-inner-wrapper">
-                  <input class="main-form__input" type="email" placeholder="Ваш Email*" required>
+                  <input class="main-form__input" type="email" id="email" placeholder="Ваш Email*" required>
                   <svg class="main-form__img main-form__img--email" width="32" height="32" aria-hidden="true" role="presentation">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
                   </svg>
@@ -182,7 +182,7 @@
         <div class="main-form__wrapper main-form__wrapper--extra">
           <fieldset class="main-form__fieldset">
             <div class="main-form__fieldset-wrapper">
-              <h3 class="main-form__title main-form__title--extra">Доп</h3>
+              <label class="main-form__title main-form__title--extra" for="additional-text">Доп</label>
               <div class="main-form__fieldset-inner-wrapper">
                 <textarea class="main-form__textarea" name="additional" id="additional-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
