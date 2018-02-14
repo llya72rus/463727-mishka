@@ -139,7 +139,7 @@
   }
 
   .popular-product__img {
-    width: 43%;
+    width: 43.5%;
     position: absolute;
     top: 107px;
     right: 6.5%;
@@ -201,7 +201,7 @@
 
   .popular-product__text {
     width: 292px;
-    margin-bottom: 109px;
+    margin-bottom: 108px;
     margin-left: 176px;
   }
 
@@ -219,5 +219,13 @@
     right: 0;
     width: 525px;
     height: 636px;
+  }
+
+  .popular-product__characreristics {
+    letter-spacing: -0.8px;
+  }
+
+  .popular-product__cell {
+    padding: 10px 0 13px;
   }
 }

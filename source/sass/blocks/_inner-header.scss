@@ -21,7 +21,7 @@
 @media (min-width: $tablet-width) {
   .inner-header {
     position: relative;
-    margin-bottom: 78px;
+    margin-bottom: 80px;
 
     &--knitting {
       margin-bottom: 73px;
@@ -35,7 +35,7 @@
     }
 
     &::before {
-      bottom: 94%;
+      bottom: 93%;
       height: 91px;
       background-color: $grey-dark;
       border-top: 1px solid #dfdfdf;
@@ -74,12 +74,12 @@
   }
 
   .inner-header__wrapper {
-    padding-top: 16px;
+    padding-top: 11px;
     padding-bottom: 97px;
   }
 
   .inner-header::before {
-    bottom: 96%;
+    bottom: 98%;
     height: 85px;
   }
 }

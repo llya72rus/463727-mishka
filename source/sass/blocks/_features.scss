@@ -181,6 +181,8 @@
   }
 
   .features__item {
+    margin-bottom: 43px;
+
     &--flower,
     &--likes {
       padding-right: 125px;
@@ -189,6 +191,11 @@
     &--price,
     &--delivery {
       padding-right: 100px;
+    }
+
+    &--likes,
+    &--delivery {
+      margin-bottom: 0;
     }
   }
 

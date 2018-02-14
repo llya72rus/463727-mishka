@@ -13,56 +13,60 @@
 <body>
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <div class="main-nav__logo main-nav__logo--current">
-        <a>
-          <svg class="main-nav__mobile-logo" width="86" height="35" role="img">
-            <title>Логотип компании "Мишка"</title>
-            <use xlink:href="img/sprite.svg#logo-mobile"></use>
-          </svg>
-          <svg class="main-nav__tablet-logo"  width="112" height="46" role="img">
-            <title>Логотип компании "Мишка"</title>
-            <use xlink:href="img/sprite.svg#logo-tablet"></use>
-          </svg>
-          <svg class="main-nav__desktop-logo"  width="149" height="72" role="img">
-            <title>Логотип компании "Мишка"</title>
-            <use xlink:href="img/sprite.svg#logo-desktop"></use>
-          </svg>
-        </a>
-      </div>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--catalog">
-          <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-nav__item main-nav__item--knitting">
-          <a class="main-nav__link main-nav__link--knitting" href="form.html">Вязание на заказ</a>
-        </li>
-        <li class="main-nav__item main-nav__item--search">
-          <a class="main-nav__link main-nav__link--search" href="#">
-            <svg class="main-nav__img" width="17.6" height="17.6" aria-hidden="true" role="presentation">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
+      <div class="main-nav__menu-wrapper">
+        <div class="main-nav__logo main-nav__logo--current">
+          <a>
+            <svg class="main-nav__mobile-logo" width="86" height="35" role="img">
+              <title>Логотип компании "Мишка"</title>
+              <use xlink:href="img/sprite.svg#logo-mobile"></use>
             </svg>
-            Поиск по сайту
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--cart">
-          <a class="main-nav__link" href="#">
-            <svg class="main-nav__img main-nav__img--cart" width="20.294" height="18.849" aria-hidden="true" role="presentation">
-              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            <svg class="main-nav__tablet-logo" width="112" height="46" role="img">
+              <title>Логотип компании "Мишка"</title>
+              <use xlink:href="img/sprite.svg#logo-tablet"></use>
             </svg>
-            Корзина: пока пуста
+            <svg class="main-nav__desktop-logo" width="149" height="72" role="img">
+              <title>Логотип компании "Мишка"</title>
+              <use xlink:href="img/sprite.svg#logo-desktop"></use>
+            </svg>
           </a>
-        </li>
-        <li class="main-nav__item main-nav__item--desktop-show main-nav__item--new">
-          <a class="main-nav__link main-nav__link--desktop-show" href="#">Новые поступления</a>
-        </li>
-        <li class="main-nav__item main-nav__item--desktop-show main-nav__item--sale">
-          <a class="main-nav__link main-nav__link--desktop-show" href="#">Распродажа</a>
-        </li>
-        <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
-      </ul>
+        </div>
+        <ul class="main-nav__services-list">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item main-nav__item--knitting">
+            <a class="main-nav__link main-nav__link--knitting" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item main-nav__item--desktop-show main-nav__item--new">
+            <a class="main-nav__link main-nav__link--desktop-show" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--desktop-show main-nav__item--sale">
+            <a class="main-nav__link main-nav__link--desktop-show" href="#">Распродажа</a>
+          </li>
+          <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
+        </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--search" href="#">
+              <svg class="main-nav__img" width="17.6" height="17.6" aria-hidden="true" role="presentation">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              Поиск по сайту
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--cart">
+            <a class="main-nav__link" href="#">
+              <svg class="main-nav__img main-nav__img--cart" width="20.294" height="18.849" aria-hidden="true" role="presentation">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -259,7 +263,10 @@
     </form>
   </div>
   <script src="js/polyfill.js"></script>
-  <script>svg4everybody(); </script>
+  <script>
+    svg4everybody();
+
+  </script>
   <script src="js/main.min.js"></script>
   <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyCX09RrIcwRRmhs8JXVJuhDeLNmWxlTvYc&callback=initMap"></script>
 </body>
