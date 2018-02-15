@@ -12,10 +12,7 @@
 
 .popular-product__wrapper {
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 9.3%;
-  padding-right: 9.3%;
+  padding: 29px 9.3%;
 }
 
 .popular-product__bottom-wrapper {
@@ -66,6 +63,10 @@
 
   &--title {
     width: 38%;
+  }
+
+  &--value {
+    letter-spacing: -1px;
   }
 }
 
@@ -135,7 +136,7 @@
   }
 
   .popular-product__cell--title {
-    width: auto;
+    width: 34%;
   }
 
   .popular-product__img {
@@ -214,6 +215,10 @@
     margin-left: 176px;
   }
 
+  .popular-product__price {
+    margin-bottom: 33px;
+  }
+
   .popular-product__img {
     top: 0;
     right: 0;
@@ -226,6 +231,6 @@
   }
 
   .popular-product__cell {
-    padding: 10px 0 13px;
+    padding: 10px 0 11px;
   }
 }

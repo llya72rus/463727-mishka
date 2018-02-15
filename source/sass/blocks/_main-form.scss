@@ -168,6 +168,10 @@
   border-color: #c7c7c7;
 }
 
+.main-form__hidden-input:focus + .main-form__label::before {
+  outline: 1px solid $secondary-color;
+}
+
 .main-form__label-name {
   display: block;
   margin-bottom: 14px;
@@ -210,6 +214,7 @@
   border: 2px solid $primary-color;
   font-size: 17px;
   line-height: 1.2;
+  font-family: inherit;
   resize: none;
 }
 
