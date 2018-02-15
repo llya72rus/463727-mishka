@@ -21,32 +21,50 @@
   var modal = document.querySelector('.modal');
   var orderBtn = document.querySelector('.popular-product__order');
   var addToCart = document.querySelector('.product__cart');
+  var catalog = document.querySelector('.catalog__list');
+
+  function openModal () {
+    modal.classList.add('modal--show');
+  }
+
+  function closeModal () {
+    modal.classList.remove('modal--show');
+  }
 
   if (modal && orderBtn) {
     orderBtn.addEventListener('click', function(evt) {
       evt.preventDefault();
-      modal.classList.add('modal--show');
+      openModal();
     });
   }
 
   if (modal && addToCart) {
     addToCart.addEventListener('click', function(evt) {
       evt.preventDefault();
-      modal.classList.add('modal--show');
+      openModal();
+    });
+  }
+
+  if (catalog) {
+    catalog.addEventListener('click', function (evt) {
+      if (evt.target.classList.contains('product__cart')) {
+        evt.preventDefault();
+        openModal();
+      }
     });
   }
 
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27) {
       if (modal.classList.contains('modal--show')) {
-        modal.classList.remove('modal--show');
+        closeModal();
       }
     }
   });
 
   window.addEventListener('click', function (evt) {
     if (evt.target === modal) {
-      modal.classList.remove('modal--show');
+      closeModal();
     }
   });
 })();
