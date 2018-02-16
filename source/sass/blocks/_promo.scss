@@ -65,7 +65,7 @@
     }
 
     &::after {
-      bottom: -15px;
+      bottom: -19px;
       height: 34px;
       background: url("#{$imgDir}/bg-zigzag-fill.svg") repeat center;
     }
@@ -105,6 +105,14 @@
       background: $grey-darken url("#{$imgDir}/hero-desktop@2x.jpg") no-repeat 50% -59px;
       background-size: 1150px auto;
     }
+
+    &::before {
+      bottom: 99.8%;
+    }
+
+    &::after {
+      bottom: -13px;
+    }
   }
 
   .promo__wrapper {
@@ -124,9 +132,5 @@
 
   .promo__title {
     padding: 0 50px;
-  }
-
-  .promo::before {
-    bottom: 99.8%;
   }
 }

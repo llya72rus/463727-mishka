@@ -113,8 +113,13 @@
     }
   }
 
-  .main-nav--opened {
+  .main-nav--opened,
+  .main-nav--nojs {
     padding-bottom: 0;
+  }
+
+  .main-nav--nojs .main-nav__logo {
+    margin-bottom: 21px;
   }
 
   .main-nav--opened .main-nav__toggle {

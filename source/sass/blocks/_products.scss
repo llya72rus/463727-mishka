@@ -39,14 +39,14 @@
 }
 
 .products__link--interior-items::after {
-  right: 9.3%;
+  right: 11%;
   width: 40px;
   height: 62px;
   background: url("#{$imgDir}/icon-interior.svg") no-repeat 50%;
 }
 
 .products__link--toys::after {
-  right: 7%;
+  right: 8%;
   width: 60px;
   height: 60px;
   background: url("#{$imgDir}/icon-toy.svg") no-repeat 50%;
@@ -68,13 +68,27 @@
   }
 
   .products__link {
-    padding: 27px 11% 40px;
-    line-height: 1.5;
+    padding: 27px 11% 37px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
     transition: 0.2s ease;
+
+    &::after {
+      right: 10.5%;
+    }
 
     &:hover {
       transform: translateY(-5px);
     }
+  }
+
+  .products__link--interior-items::after {
+    top: 31px;
+    right: 10.5%;
+  }
+
+  .products__link--toys::after {
+    top: 32px;
   }
 }
 
@@ -86,5 +100,11 @@
   .products__link {
     padding-left: 36px;
     padding-right: 340px;
+    padding-bottom: 36px;
+    letter-spacing: 1px;
+
+    &::after {
+      right: 36px;
+    }
   }
 }
